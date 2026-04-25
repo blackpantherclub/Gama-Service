@@ -1139,6 +1139,318 @@ footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
       }
     }
 
+  
+    /* MENU DEFINITIVO COME SCREEN */
+    .nav {
+      justify-content: flex-start !important;
+      gap: 34px !important;
+    }
+
+    .brand {
+      position: absolute !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
+
+    .brand:hover {
+      transform: translateX(-50%) translateY(-1px) !important;
+    }
+
+    .nav .btn-primary {
+      margin-left: auto !important;
+    }
+
+    .mega-toggle {
+      display: inline-flex !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      width: 58px;
+      height: 58px;
+      border: 0;
+      background: transparent;
+      color: #fff;
+      font-family: var(--font-body);
+      font-weight: 900;
+      font-size: 12px;
+      cursor: pointer;
+      position: relative;
+      z-index: 180;
+      text-transform: uppercase;
+      padding: 0;
+    }
+
+    .mega-toggle-lines {
+      width: 34px;
+      height: 24px;
+      position: relative;
+      display: block;
+    }
+
+    .mega-toggle-lines span {
+      position: absolute;
+      left: 0;
+      width: 34px;
+      height: 3px;
+      border-radius: 999px;
+      background: #fff;
+      transition: transform .22s ease, opacity .22s ease, top .22s ease;
+    }
+
+    .mega-toggle-lines span:nth-child(1) { top: 1px; }
+    .mega-toggle-lines span:nth-child(2) { top: 10px; }
+    .mega-toggle-lines span:nth-child(3) { top: 19px; }
+
+    body.menu-open .mega-toggle-lines span:nth-child(1) {
+      top: 10px;
+      transform: rotate(45deg);
+    }
+
+    body.menu-open .mega-toggle-lines span:nth-child(2) {
+      opacity: 0;
+    }
+
+    body.menu-open .mega-toggle-lines span:nth-child(3) {
+      top: 10px;
+      transform: rotate(-45deg);
+    }
+
+    .mega-toggle-text::before { content: "MENU"; }
+    body.menu-open .mega-toggle-text::before { content: "CHIUDI"; }
+
+    .nav-links {
+      display: flex !important;
+      align-items: center !important;
+      gap: 34px !important;
+      margin-left: 0 !important;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 900;
+      padding: 18px 0 !important;
+      background: transparent !important;
+      border-radius: 0 !important;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      color: var(--accent-2) !important;
+    }
+
+    .nav-links a::after {
+      display: block !important;
+    }
+
+    .nav-links a[href="servizi.html"] {
+      padding: 14px 18px !important;
+      border-radius: 12px !important;
+      background: rgba(245,144,20,.08) !important;
+      color: var(--accent-2) !important;
+    }
+
+    .nav-links a[href="servizi.html"]::after {
+      display: none !important;
+    }
+
+    .mega-overlay {
+      position: fixed !important;
+      inset: 76px 0 0 0 !important;
+      height: calc(100vh - 76px) !important;
+      background: rgba(5,10,18,.78) !important;
+      backdrop-filter: blur(10px) !important;
+      z-index: 140 !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+      transform: none !important;
+      transition: opacity .22s ease, visibility .22s ease !important;
+      border-top: 1px solid rgba(255,255,255,.10);
+      overflow: auto;
+    }
+
+    body.menu-open .mega-overlay {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+
+    .screen-mega {
+      min-height: 100%;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      width: min(1600px, 100%);
+      margin: 0 auto;
+    }
+
+    .screen-mega-left {
+      background: rgba(0,0,0,.52);
+      padding: 34px 20px;
+    }
+
+    .screen-mega-left a {
+      display: block;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: clamp(26px, 2vw, 34px);
+      font-weight: 900;
+      letter-spacing: -.055em;
+      padding: 16px 20px;
+      border-left: 3px solid transparent;
+      margin-bottom: 6px;
+    }
+
+    .screen-mega-left a.active,
+    .screen-mega-left a:hover {
+      background: rgba(255,255,255,.10);
+      border-left-color: var(--accent);
+    }
+
+    .screen-mega-main {
+      background: rgba(255,255,255,.085);
+      padding: 34px 38px;
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      gap: 46px;
+    }
+
+    .screen-mega-cols {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      gap: 40px;
+      align-content: start;
+    }
+
+    .screen-col h4 {
+      color: var(--accent-2) !important;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      font-size: 13px !important;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .screen-col a {
+      display: block;
+      color: rgba(255,255,255,.78);
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.3;
+      padding: 7px 0;
+      transition: color .18s ease, transform .18s ease;
+    }
+
+    .screen-col a:hover {
+      color: var(--accent-2);
+      transform: translateX(4px);
+    }
+
+    .screen-rule {
+      height: 1px;
+      background: rgba(255,255,255,.20);
+      margin: 20px 0 22px;
+    }
+
+    .screen-feature {
+      align-self: start;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.08);
+    }
+
+    .screen-feature img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      filter: brightness(.9) saturate(1.15);
+    }
+
+    .screen-feature-content {
+      padding: 26px;
+    }
+
+    .screen-feature-content strong {
+      display: block;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 30px;
+      line-height: 1.03;
+      letter-spacing: -.06em;
+      margin-bottom: 24px;
+    }
+
+    .screen-feature-content a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 24px;
+      border-radius: 999px;
+      border: 1.5px solid var(--accent);
+      color: #fff;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .screen-feature-content a:hover {
+      background: var(--accent);
+      color: #07111f;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    @media (max-width: 980px) {
+      .brand {
+        position: static !important;
+        transform: none !important;
+      }
+
+      .brand:hover {
+        transform: translateY(-1px) !important;
+      }
+
+      .nav-links {
+        display: none !important;
+      }
+
+      .nav .btn-primary {
+        display: none !important;
+      }
+
+      .screen-mega {
+        grid-template-columns: 1fr;
+      }
+
+      .screen-mega-main {
+        grid-template-columns: 1fr;
+        padding: 26px 20px 48px;
+      }
+
+      .screen-mega-cols {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+    }
+
+  
+    /* FIX: solo hamburger apre il mega menu */
+    body:not(.menu-open) .mega-overlay {
+      opacity: 0 !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+    }
+
+    body.menu-open .mega-overlay {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+
   </style>
 </head>
 
@@ -1152,7 +1464,7 @@ footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
 
   <header>
     <div class="container nav">
-      
+
       <button class="mega-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
         <span class="mega-toggle-lines" aria-hidden="true">
           <span></span>
@@ -1179,39 +1491,67 @@ footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
   </header>
 
   <div class="mega-overlay" id="megaMenu" aria-hidden="true">
-    <div class="mega-shell mega-shell-services-only">
-      <div class="mega-services-only">
-        <div class="mega-services-head">
-          <span>Servizi</span>
-          <strong>Le nostre aree operative</strong>
+    <div class="screen-mega">
+      <aside class="screen-mega-left">
+        <a class="active" href="servizi.html">Servizi</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="index.html#soluzioni">Soluzioni</a>
+        <a href="index.html#contatti">Contatti</a>
+      </aside>
+
+      <div class="screen-mega-main">
+        <div class="screen-mega-cols">
+          <div class="screen-col">
+            <h4>Impianti tecnici</h4>
+            <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a>
+            <a href="impianti-elettrici.html">Impianti elettrici</a>
+            <a href="impianti-speciali.html">Impianti speciali</a>
+
+            <div class="screen-rule"></div>
+
+            <h4>Manutenzione</h4>
+            <a href="manutenzione.html">Interventi ordinari</a>
+            <a href="manutenzione.html">Interventi straordinari</a>
+          </div>
+
+          <div class="screen-col">
+            <h4>Edilizia</h4>
+            <a href="edilizia.html">Ristrutturazioni</a>
+            <a href="edilizia.html">Nuove costruzioni</a>
+            <a href="edilizia.html">Manutenzioni edili</a>
+
+            <div class="screen-rule"></div>
+
+            <h4>Facility Management</h4>
+            <a href="facility-management.html">Arredamento</a>
+            <a href="facility-management.html">Facchinaggio</a>
+            <a href="facility-management.html">Giardinaggio</a>
+            <a href="facility-management.html">Pulizie</a>
+          </div>
+
+          <div class="screen-col">
+            <h4>Sistemi speciali</h4>
+            <a href="impianti-speciali.html">Reti dati</a>
+            <a href="impianti-speciali.html">Data center</a>
+            <a href="impianti-speciali.html">Videosorveglianza</a>
+            <a href="impianti-speciali.html">Controllo accessi</a>
+            <a href="impianti-speciali.html">Building automation</a>
+
+            <div class="screen-rule"></div>
+
+            <h4>Supporto</h4>
+            <a href="tel:+390396776853">Chiama GaMa Service</a>
+            <a href="mailto:info@gama-service.com">Scrivici una email</a>
+          </div>
         </div>
 
-        <div class="mega-services-grid">
-          <a href="impianti-meccanici-e-termotecnici.html">
-            <span>Impianti</span>
-            <strong>Meccanici e termotecnici</strong>
-          </a>
-          <a href="impianti-elettrici.html">
-            <span>Energia</span>
-            <strong>Impianti elettrici</strong>
-          </a>
-          <a href="impianti-speciali.html">
-            <span>Tecnologia</span>
-            <strong>Impianti speciali</strong>
-          </a>
-          <a href="edilizia.html">
-            <span>Edile</span>
-            <strong>Edilizia</strong>
-          </a>
-          <a href="facility-management.html">
-            <span>Gestione</span>
-            <strong>Facility Management</strong>
-          </a>
-          <a href="manutenzione.html">
-            <span>Manutenzione</span>
-            <strong>Interventi ordinari e straordinari</strong>
-          </a>
-        </div>
+        <aside class="screen-feature">
+          <img src="assets/img-08-b7b47efa6681.webp" alt="GaMa Service servizi integrati">
+          <div class="screen-feature-content">
+            <strong>Un unico partner operativo per impianti, edilizia e facility.</strong>
+            <a href="servizi.html">Vai ai servizi</a>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
@@ -1365,37 +1705,7 @@ footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
     updateDateTime();
     setInterval(updateDateTime, 1000);
   </script>
-
-  <script>
-    (function () {
-      const toggle = document.querySelector('.mega-toggle');
-      const panel = document.querySelector('.mega-overlay');
-      if (!toggle || !panel) return;
-
-      function setMenu(open) {
-        document.body.classList.toggle('menu-open', open);
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        panel.setAttribute('aria-hidden', open ? 'false' : 'true');
-      }
-
-      toggle.addEventListener('click', function () {
-        setMenu(!document.body.classList.contains('menu-open'));
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') setMenu(false);
-      });
-
-      panel.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          setMenu(false);
-        });
-      });
-    })();
-  </script>
-
-
-  <script>
+<script>
     (function () {
       if ('scrollRestoration' in history) {
         history.scrollRestoration = 'manual';
@@ -1413,6 +1723,40 @@ footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
         if (!hasHash || navType === 'reload') {
           window.scrollTo(0, 0);
         }
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.mega-toggle');
+      const panel = document.querySelector('.mega-overlay');
+      if (!toggle || !panel) return;
+
+      function setMenu(open) {
+        document.body.classList.toggle('menu-open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      }
+
+      setMenu(false);
+
+      toggle.addEventListener('click', function () {
+        setMenu(!document.body.classList.contains('menu-open'));
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') setMenu(false);
+      });
+
+      panel.addEventListener('click', function (event) {
+        if (event.target === panel) setMenu(false);
+      });
+
+      panel.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          setMenu(false);
+        });
       });
     })();
   </script>
