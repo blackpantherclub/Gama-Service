@@ -1851,7 +1851,201 @@ body.gama-menu-open {
   }
 }
 
-  </style>
+  
+/* ===== MEGA MENU RIDISEGNATO - PULITO ===== */
+.nav-links {
+  display: none !important;
+}
+
+.gama-mega {
+  position: fixed !important;
+  inset: 76px 0 0 0 !important;
+  height: calc(100vh - 76px) !important;
+  background: rgba(5,10,18,.86) !important;
+  backdrop-filter: blur(18px) !important;
+  z-index: 220 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity .24s ease, visibility .24s ease !important;
+  border-top: 1px solid rgba(245,144,20,.22);
+  overflow: auto;
+}
+
+body.gama-menu-open .gama-mega {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.gama-mega-layout {
+  width: min(1500px, 100%);
+  min-height: 100%;
+  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: 300px 1fr !important;
+}
+
+.gama-mega-left {
+  background:
+    radial-gradient(circle at 100% 50%, rgba(245,144,20,.08), transparent 36%),
+    rgba(0,0,0,.58) !important;
+  padding: 38px 20px !important;
+  border-right: 1px solid rgba(255,255,255,.08);
+}
+
+.gama-mega-left a {
+  display: block !important;
+  color: #fff !important;
+  font-family: var(--font-display, system-ui, sans-serif) !important;
+  font-size: clamp(28px, 2vw, 38px) !important;
+  font-weight: 900 !important;
+  letter-spacing: -.06em !important;
+  padding: 17px 22px !important;
+  border-left: 3px solid transparent !important;
+  margin-bottom: 8px !important;
+  text-decoration: none !important;
+  border-radius: 0 4px 4px 0;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.gama-mega-left a:hover,
+.gama-mega-left a.active {
+  background: rgba(255,255,255,.11) !important;
+  border-left-color: var(--accent, #f59014) !important;
+  transform: translateX(3px);
+}
+
+.gama-mega-main {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(245,144,20,.14), transparent 28%),
+    linear-gradient(135deg, rgba(255,255,255,.09), rgba(255,255,255,.045)) !important;
+  padding: 38px 42px !important;
+  display: grid !important;
+  grid-template-columns: 1fr 330px !important;
+  gap: 44px !important;
+}
+
+.gama-mega-cols {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(190px, 1fr)) !important;
+  gap: 38px !important;
+  align-content: start !important;
+}
+
+.gama-mega-col {
+  min-width: 0;
+}
+
+.gama-mega-col h4 {
+  color: var(--accent-2, #ffb247) !important;
+  text-transform: uppercase !important;
+  letter-spacing: .12em !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  margin: 0 0 18px !important;
+}
+
+.gama-mega-col a {
+  display: block !important;
+  color: rgba(255,255,255,.82) !important;
+  font-size: 17px !important;
+  font-weight: 850 !important;
+  line-height: 1.28 !important;
+  padding: 9px 0 !important;
+  text-decoration: none !important;
+  transition: color .18s ease, transform .18s ease;
+}
+
+.gama-mega-col a:hover {
+  color: var(--accent-2, #ffb247) !important;
+  transform: translateX(5px) !important;
+}
+
+.gama-mega-rule {
+  height: 1px !important;
+  background: rgba(255,255,255,.18) !important;
+  margin: 22px 0 !important;
+}
+
+.gama-mega-feature {
+  align-self: start !important;
+  border-radius: 22px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(255,255,255,.16) !important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.045)) !important;
+  box-shadow: 0 28px 85px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+
+.gama-mega-feature img {
+  width: 100% !important;
+  height: 185px !important;
+  object-fit: cover !important;
+  filter: brightness(.92) saturate(1.12) !important;
+}
+
+.gama-mega-feature-content {
+  padding: 28px !important;
+}
+
+.gama-mega-feature-content strong {
+  display: block !important;
+  color: #fff !important;
+  font-family: var(--font-display, system-ui, sans-serif) !important;
+  font-size: 32px !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.065em !important;
+  margin-bottom: 24px !important;
+}
+
+.gama-mega-feature-content a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 48px !important;
+  padding: 0 24px !important;
+  border-radius: 999px !important;
+  border: 1.5px solid var(--accent, #f59014) !important;
+  color: #fff !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .06em !important;
+  text-decoration: none !important;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.gama-mega-feature-content a:hover {
+  background: var(--accent, #f59014) !important;
+  color: #07111f !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 980px) {
+  .gama-mega-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gama-mega-main {
+    grid-template-columns: 1fr !important;
+    padding: 28px 22px 52px !important;
+  }
+
+  .gama-mega-cols {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .gama-mega-left {
+    padding: 28px 20px 10px !important;
+  }
+
+  .gama-mega-feature img {
+    height: 150px !important;
+  }
+}
+
+</style>
 </head>
 
 <body>
@@ -1896,31 +2090,24 @@ body.gama-menu-open {
             <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a>
             <a href="impianti-elettrici.html">Impianti elettrici</a>
             <a href="impianti-speciali.html">Impianti speciali</a>
-</div>
+          </div>
 
           <div class="gama-mega-col">
             <h4>Edilizia</h4>
             <a href="edilizia.html">Edilizia</a>
-            <a href="edilizia.html">Ristrutturazioni</a>
-            <a href="edilizia.html">Nuove costruzioni</a>
-            <a href="edilizia.html">Manutenzioni edili</a>
+
             <div class="gama-mega-rule"></div>
+
             <h4>Facility Management</h4>
             <a href="facility-management.html">Facility Management</a>
-            <a href="facility-management.html">Arredamento</a>
-            <a href="facility-management.html">Facchinaggio</a>
-            <a href="facility-management.html">Giardinaggio</a>
-            <a href="facility-management.html">Pulizie</a>
           </div>
 
           <div class="gama-mega-col">
             <h4>Sistemi speciali</h4>
-            <a href="impianti-speciali.html">Reti dati</a>
-            <a href="impianti-speciali.html">Data center</a>
-            <a href="impianti-speciali.html">Videosorveglianza</a>
-            <a href="impianti-speciali.html">Controllo accessi</a>
-            <a href="impianti-speciali.html">Building automation</a>
+            <a href="impianti-speciali.html">Infrastrutture di rete</a>
+
             <div class="gama-mega-rule"></div>
+
             <h4>Azienda e supporto</h4>
             <a href="chi-siamo.html">Chi siamo</a>
             <a href="servizi.html">Tutti i servizi</a>
