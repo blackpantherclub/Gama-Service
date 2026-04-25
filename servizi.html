@@ -1452,10 +1452,14 @@ footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
     }
 
   
-/* ===== MENU DEFINITIVO GAMA SERVICE - UNICO ===== */
+/* ===== MENU SOLO HAMBURGER + MEGA MENU PREMIUM ===== */
 .nav {
-  justify-content: flex-start !important;
-  gap: 32px !important;
+  justify-content: space-between !important;
+  gap: 24px !important;
+}
+
+.nav-links {
+  display: none !important;
 }
 
 .gama-menu-toggle {
@@ -1472,13 +1476,11 @@ footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
   font-family: var(--font-body, system-ui, sans-serif);
   font-weight: 900;
   font-size: 12px;
-  line-height: 1;
   cursor: pointer;
   position: relative;
   z-index: 300;
   text-transform: uppercase;
   padding: 0;
-  flex: 0 0 auto;
 }
 
 .gama-menu-lines {
@@ -1530,50 +1532,6 @@ body.gama-menu-open .gama-menu-label::before { content: "CHIUDI"; }
   transform: translateX(-50%) translateY(-1px) !important;
 }
 
-.nav-links {
-  display: flex !important;
-  align-items: center !important;
-  gap: 32px !important;
-  margin-left: 0 !important;
-  position: relative !important;
-}
-
-.nav-links a {
-  color: var(--muted, #a9b8ca) !important;
-  font-weight: 900 !important;
-  padding: 18px 0 !important;
-  background: transparent !important;
-  border-radius: 0 !important;
-  text-decoration: none !important;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--accent-2, #ffb247) !important;
-}
-
-.nav-links a[href="servizi.html"] {
-  padding: 14px 18px !important;
-  border-radius: 12px !important;
-  background: rgba(245,144,20,.08) !important;
-  color: var(--accent-2, #ffb247) !important;
-}
-
-.nav-links a[href="servizi.html"]::after {
-  display: none !important;
-}
-
-.nav-item,
-.dropdown-menu,
-.mega-toggle,
-.mega-overlay,
-.screen-mega,
-.mega-menu-inner,
-.mega-shell,
-.mega-services-only {
-  display: none !important;
-}
-
 .nav .btn-primary {
   margin-left: auto !important;
   position: relative;
@@ -1585,13 +1543,13 @@ body.gama-menu-open .gama-menu-label::before { content: "CHIUDI"; }
   inset: 76px 0 0 0 !important;
   height: calc(100vh - 76px) !important;
   background: rgba(5,10,18,.82) !important;
-  backdrop-filter: blur(14px) !important;
+  backdrop-filter: blur(16px) !important;
   z-index: 220 !important;
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
-  transition: opacity .22s ease, visibility .22s ease !important;
-  border-top: 1px solid rgba(255,255,255,.10);
+  transition: opacity .24s ease, visibility .24s ease !important;
+  border-top: 1px solid rgba(245,144,20,.20);
   overflow: auto;
 }
 
@@ -1610,7 +1568,7 @@ body.gama-menu-open .gama-mega {
 }
 
 .gama-mega-left {
-  background: rgba(0,0,0,.54);
+  background: rgba(0,0,0,.55);
   padding: 34px 20px;
 }
 
@@ -1634,7 +1592,9 @@ body.gama-menu-open .gama-mega {
 }
 
 .gama-mega-main {
-  background: rgba(255,255,255,.085);
+  background:
+    radial-gradient(circle at 80% 12%, rgba(245,144,20,.10), transparent 34%),
+    rgba(255,255,255,.085);
   padding: 34px 38px;
   display: grid;
   grid-template-columns: 1fr 310px;
@@ -1685,6 +1645,7 @@ body.gama-menu-open .gama-mega {
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.16);
   background: rgba(255,255,255,.08);
+  box-shadow: 0 24px 70px rgba(0,0,0,.28);
 }
 
 .gama-mega-feature img {
@@ -1732,6 +1693,33 @@ body.gama-menu-open {
   overflow: hidden;
 }
 
+/* ===== DESIGN REFINEMENT PREMIUM ===== */
+.service-card,
+.section-block,
+.detail-content,
+.hero-panel,
+.detail-media {
+  box-shadow: 0 24px 70px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+
+.service-card:hover,
+.section-block:hover {
+  transform: translateY(-7px) !important;
+  border-color: rgba(245,144,20,.65) !important;
+  box-shadow: 0 32px 90px rgba(0,0,0,.36), 0 0 32px rgba(245,144,20,.12) !important;
+}
+
+.btn,
+.btn-primary,
+.cta-btn {
+  box-shadow: 0 14px 35px rgba(245,144,20,.18);
+}
+
+::selection {
+  background: rgba(245,144,20,.35);
+  color: #fff;
+}
+
 @media (max-width: 980px) {
   .nav > .brand {
     position: static !important;
@@ -1740,10 +1728,6 @@ body.gama-menu-open {
 
   .nav > .brand:hover {
     transform: translateY(-1px) !important;
-  }
-
-  .nav-links {
-    display: none !important;
   }
 
   .nav .btn-primary {
@@ -1765,60 +1749,7 @@ body.gama-menu-open {
   }
 }
 
-  
-/* MENU SOLO HAMBURGER: tutto integrato nel mega menu */
-.nav-links {
-  display: none !important;
-}
-
-.nav {
-  justify-content: space-between !important;
-  gap: 24px !important;
-}
-
-.gama-menu-toggle {
-  margin-right: auto !important;
-}
-
-.nav > .brand {
-  position: absolute !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
-.nav .btn-primary {
-  margin-left: auto !important;
-}
-
-
-/* FIX FINALE: NASCONDE SEMPRE IL MENU SUPERIORE CLASSICO */
-header .nav-links,
-.nav-links,
-nav.nav-links {
-  display: none !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-}
-
-header .nav {
-  justify-content: space-between !important;
-}
-
-header .gama-menu-toggle {
-  display: inline-flex !important;
-}
-
-header .brand {
-  position: absolute !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
-header .btn-primary {
-  margin-left: auto !important;
-}
-
-</style>
+  </style>
 </head>
 
 <body>
@@ -1862,9 +1793,7 @@ header .btn-primary {
             <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a>
             <a href="impianti-elettrici.html">Impianti elettrici</a>
             <a href="impianti-speciali.html">Impianti speciali</a>
-
             <div class="gama-mega-rule"></div>
-
             <h4>Manutenzione</h4>
             <a href="manutenzione.html">Interventi ordinari</a>
             <a href="manutenzione.html">Interventi straordinari</a>
@@ -1876,9 +1805,7 @@ header .btn-primary {
             <a href="edilizia.html">Ristrutturazioni</a>
             <a href="edilizia.html">Nuove costruzioni</a>
             <a href="edilizia.html">Manutenzioni edili</a>
-
             <div class="gama-mega-rule"></div>
-
             <h4>Facility Management</h4>
             <a href="facility-management.html">Facility Management</a>
             <a href="facility-management.html">Arredamento</a>
@@ -1894,9 +1821,7 @@ header .btn-primary {
             <a href="impianti-speciali.html">Videosorveglianza</a>
             <a href="impianti-speciali.html">Controllo accessi</a>
             <a href="impianti-speciali.html">Building automation</a>
-
             <div class="gama-mega-rule"></div>
-
             <h4>Azienda e supporto</h4>
             <a href="chi-siamo.html">Chi siamo</a>
             <a href="servizi.html">Tutti i servizi</a>
@@ -1917,7 +1842,81 @@ header .btn-primary {
   </div>
 
 <main>
-    
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Cosa facciamo</div>
+        <h1>I nostri servizi</h1>
+        <p>Soluzioni complete per progettazione, realizzazione e manutenzione di impianti, opere edili e facility management. Ogni servizio ha una pagina dedicata, senza duplicazioni.</p>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="container">
+        <div class="services-grid">
+          <a href="impianti-meccanici-e-termotecnici.html" class="service-card">
+            <div class="service-img"><img src="assets/img-03-0d421d0fb6c7.webp" alt="Impianti meccanici e termotecnici"></div>
+            <div class="service-content">
+              <div class="service-tag">Impianti</div>
+              <h2>Meccanici e termotecnici</h2>
+              <p>Riscaldamento, condizionamento, impianti idraulici e solari-termici per comfort ed efficienza energetica.</p>
+              <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <a href="impianti-elettrici.html" class="service-card">
+            <div class="service-img"><img src="assets/img-04-779ff0e7ad6d.webp" alt="Impianti elettrici"></div>
+            <div class="service-content">
+              <div class="service-tag">Energia</div>
+              <h2>Impianti elettrici</h2>
+              <p>Impianti industriali e civili, cabine di tensione, quadri elettrici, automazione e manutenzione.</p>
+              <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <a href="impianti-speciali.html" class="service-card">
+            <div class="service-img"><img src="assets/img-05-b0d297e2d25d.webp" alt="Impianti speciali"></div>
+            <div class="service-content">
+              <div class="service-tag">Tecnologia</div>
+              <h2>Impianti speciali</h2>
+              <p>Reti dati, data center, videosorveglianza, controllo accessi e building automation.</p>
+              <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="services-grid-bottom">
+          <a href="edilizia.html" class="service-card">
+            <div class="service-img"><img src="assets/img-06-4849d33d28c9.webp" alt="Edilizia"></div>
+            <div class="service-content">
+              <div class="service-tag">Edile</div>
+              <h2>Edilizia</h2>
+              <p>Ristrutturazioni, nuove costruzioni, manutenzione ordinaria e straordinaria di edifici civili e industriali.</p>
+              <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <a href="facility-management.html" class="service-card">
+            <div class="service-img"><img src="assets/img-07-cea2c2452fe9.webp" alt="Facility management"></div>
+            <div class="service-content">
+              <div class="service-tag">Gestione</div>
+              <h2>Facility Management</h2>
+              <p>Arredamento, facchinaggio, giardinaggio, pulizie e gestione completa degli spazi aziendali.</p>
+              <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <a href="manutenzione.html" class="service-card">
+            <div class="service-img"><img src="assets/img-08-b7b47efa6681.webp" alt="Interventi ordinari e straordinari"></div>
+            <div class="service-content">
+              <div class="service-tag">Manutenzione</div>
+              <h2>Interventi ordinari e straordinari</h2>
+              <p>Supporto continuo per impianti aziendali e privati, con organizzazione, controllo e qualità esecutiva.</p>
+              <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="cta" id="contatti">
       <div class="container cta-box">

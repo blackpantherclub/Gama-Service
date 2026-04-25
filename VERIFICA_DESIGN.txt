@@ -1,0 +1,56 @@
+{
+  "chi-siamo.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  },
+  "edilizia.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  },
+  "facility-management.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  },
+  "impianti-elettrici.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  },
+  "impianti-speciali.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  },
+  "index.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 1
+  },
+  "manutenzione.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  },
+  "servizi.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "nav_links": 0,
+    "old_menu": 0
+  }
+}
