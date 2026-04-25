@@ -1444,6 +1444,106 @@
       animation: livePulse 1.4s ease-in-out infinite;
     }
 
+  
+    /* DROPDOWN SERVIZI */
+    .nav-links {
+      position: relative;
+    }
+
+    .nav-item {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .nav-dropdown-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      font-weight: 800;
+      padding: 12px 18px;
+      border-radius: 12px;
+      transition: color .2s ease, background .2s ease;
+    }
+
+    .nav-dropdown-trigger svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      transition: transform .2s ease;
+    }
+
+    .nav-item:hover .nav-dropdown-trigger,
+    .nav-item:focus-within .nav-dropdown-trigger,
+    .nav-dropdown-trigger.active {
+      color: var(--accent-2);
+      background: rgba(245,144,20,.08);
+    }
+
+    .nav-item:hover .nav-dropdown-trigger svg,
+    .nav-item:focus-within .nav-dropdown-trigger svg {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      width: 330px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.96);
+      color: #303642;
+      border: 1px solid rgba(0,0,0,.08);
+      box-shadow: 0 24px 70px rgba(0,0,0,.18);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+      z-index: 100;
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-item:hover .dropdown-menu,
+    .nav-item:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 13px 14px;
+      border-radius: 12px;
+      color: #555b66;
+      font-weight: 750;
+      font-size: 16px;
+      transition: background .18s ease, color .18s ease, transform .18s ease;
+    }
+
+    .dropdown-menu a:hover {
+      background: rgba(245,144,20,.09);
+      color: #111820;
+      transform: translateX(4px);
+    }
+
+    .dropdown-menu a::after {
+      display: none !important;
+    }
+
+    @media (max-width: 720px) {
+      .nav-item {
+        display: none;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -1461,11 +1561,24 @@
         <span>GaMa Service</span>
       </a>
 
-      <nav class="nav-links" aria-label="Menu principale">
+            <nav class="nav-links" aria-label="Menu principale">
         <a href="index.html">Home</a>
         <a href="chi-siamo.html">Chi siamo</a>
-        <a href="index.html#servizi">Servizi</a>
-        <a href="index.html#soluzioni">Soluzioni</a>
+
+        <div class="nav-item">
+          <button class="nav-dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            Servizi
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown-menu" aria-label="Sottomenu servizi">
+            <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a>
+            <a href="servizi.html#elettrici">Impianti Elettrici</a>
+            <a href="servizi.html#speciali">Impianti Speciali</a>
+            <a href="servizi.html#edilizia">Edilizia</a>
+            <a href="servizi.html#facility">Facility Management</a>
+          </div>
+        </div>
+
         <a href="index.html#contatti">Contatti</a>
       </nav>
 
@@ -1806,6 +1919,11 @@
           link.classList.add('active');
         }
       });
+
+      if (currentPath === 'servizi.html') {
+        const trigger = document.querySelector('.nav-dropdown-trigger');
+        if (trigger) trigger.classList.add('active');
+      }
     })();
   </script>
 
