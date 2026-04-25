@@ -1,0 +1,73 @@
+{
+  "chi-siamo.html": {
+    "removed_maintenance_cards": 0,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0
+  },
+  "edilizia.html": {
+    "removed_maintenance_cards": 0,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0
+  },
+  "facility-management.html": {
+    "removed_maintenance_cards": 0,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0
+  },
+  "impianti-elettrici.html": {
+    "removed_maintenance_cards": 0,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "removed_maintenance_cards": 0,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0
+  },
+  "impianti-speciali.html": {
+    "removed_maintenance_cards": 0,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0
+  },
+  "index.html": {
+    "removed_maintenance_cards": 1,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 1,
+    "article_card_count": 5,
+    "service_card_count": 0,
+    "has_services_section_title": true,
+    "remaining_maintenance_card": false
+  },
+  "manutenzione.html": {
+    "removed_maintenance_cards": 0,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0
+  },
+  "servizi.html": {
+    "removed_maintenance_cards": 1,
+    "gama_toggle": 1,
+    "gama_mega": 1,
+    "classic_nav": 0,
+    "old_menu": 0,
+    "article_card_count": 0,
+    "service_card_count": 5,
+    "has_services_section_title": true,
+    "remaining_maintenance_card": false
+  }
+}
