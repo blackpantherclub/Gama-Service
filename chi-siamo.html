@@ -2345,6 +2345,34 @@ body.gama-menu-open {
   margin-left: auto !important;
 }
 
+
+/* FIX FINALE: NASCONDE SEMPRE IL MENU SUPERIORE CLASSICO */
+header .nav-links,
+.nav-links,
+nav.nav-links {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+header .nav {
+  justify-content: space-between !important;
+}
+
+header .gama-menu-toggle {
+  display: inline-flex !important;
+}
+
+header .brand {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+header .btn-primary {
+  margin-left: auto !important;
+}
+
 </style>
 </head>
 <body>
@@ -2367,15 +2395,7 @@ body.gama-menu-open {
         <img src="assets/img-01-1f57fc19aa46.gif" alt="GaMa Service logo" class="brand-logo">
         <span>GaMa Service</span>
       </a>
-
-            <nav class="nav-links" aria-label="Menu principale">
-        <a href="index.html">Home</a>
-        <a href="chi-siamo.html">Chi siamo</a>
-        <a href="servizi.html">Servizi</a>
-        <a href="index.html#contatti">Contatti</a>
-      </nav>
-
-      <a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a>
+<a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a>
     </div>
   </header>
 
@@ -2451,17 +2471,7 @@ body.gama-menu-open {
   </div>
 
 <main>
-    <section class="about-hero">
-      <div class="container about-hero-grid">
-        <div class="about-card">
-          <h1>Chi siamo</h1>
-          <p>GaMa Service è un'azienda in forte crescita, specializzata nella gestione completa di interventi ordinari e straordinari su impianti aziendali e privati. Grazie a un team di professionisti qualificati, offriamo soluzioni a 360° per la progettazione, realizzazione e manutenzione di impianti termotecnici, meccanici, elettrici e opere edili. Siamo anche presenti nel Facility Management, offrendo servizi di arredamento, facchinaggio, giardinaggio e pulizie.</p>
-        </div>
-        <div class="about-image">
-          <img src="assets/img-02-a171af66d8fd.webp" alt="Tecnico specializzato GaMa Service al lavoro su impianto industriale">
-        </div>
-      </div>
-    </section>
+    
 
     <section class="section light">
       <div class="container">

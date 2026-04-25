@@ -1892,6 +1892,34 @@ body.gama-menu-open {
   margin-left: auto !important;
 }
 
+
+/* FIX FINALE: NASCONDE SEMPRE IL MENU SUPERIORE CLASSICO */
+header .nav-links,
+.nav-links,
+nav.nav-links {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+header .nav {
+  justify-content: space-between !important;
+}
+
+header .gama-menu-toggle {
+  display: inline-flex !important;
+}
+
+header .brand {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+header .btn-primary {
+  margin-left: auto !important;
+}
+
 </style>
 </head>
 
@@ -1916,15 +1944,7 @@ body.gama-menu-open {
         <img src="assets/img-02-1f57fc19aa46.gif" alt="GaMa Service logo" class="brand-logo">
         <span>GaMa Service</span>
       </a>
-
-      <nav class="nav-links" aria-label="Menu principale">
-        <a href="index.html">Home</a>
-        <a href="chi-siamo.html">Chi siamo</a>
-        <a href="servizi.html">Servizi</a>
-        <a href="index.html#contatti">Contatti</a>
-      </nav>
-
-      <a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a>
+<a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a>
     </div>
   </header>
 
@@ -2000,14 +2020,7 @@ body.gama-menu-open {
   </div>
 
 <main>
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">Manutenzione</div>
-      <h1>Interventi ordinari e straordinari</h1>
-      <p>Supporto continuo per impianti aziendali e privati, con organizzazione, controllo e qualità esecutiva.</p>
-      <a class="btn btn-primary" href="servizi.html">Indietro ai servizi</a>
-    </div>
-  </section>
+  
 
   <section class="detail-page">
     <div class="container">
@@ -2056,7 +2069,6 @@ body.gama-menu-open {
     </div>
   </section>
 </main>
-
 
   <footer>
     <div class="container footer-grid">
