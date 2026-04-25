@@ -39,7 +39,7 @@
     "gama_toggle": 1,
     "gama_overlay": 1,
     "nav_links": 0,
-    "old_menu": 1
+    "old_menu": 0
   },
   "manutenzione.html": {
     "gama_toggle": 1,
