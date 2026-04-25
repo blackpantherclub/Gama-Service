@@ -1570,6 +1570,22 @@ body.gama-menu-open .gama-mega{opacity:1!important;visibility:visible!important;
 body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-panel,.section-block{box-shadow:0 24px 70px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.06)!important}
 @media(max-width:980px){.nav>.brand{position:static!important;transform:none!important}.nav>.brand:hover{transform:translateY(-1px)!important}.nav .btn-primary{display:none!important}.gama-mega-layout{grid-template-columns:1fr!important}.gama-mega-main{grid-template-columns:1fr!important;padding:28px 22px 52px!important}.gama-mega-cols{grid-template-columns:1fr!important;gap:22px!important}}
 
+
+/* FIX MEGA MENU SENZA CARD IMMAGINE */
+.gama-mega-main {
+  grid-template-columns: 1fr !important;
+  max-width: 1180px !important;
+}
+
+.gama-mega-feature {
+  display: none !important;
+}
+
+.gama-mega-cols {
+  grid-template-columns: repeat(3, minmax(220px, 1fr)) !important;
+  gap: 60px !important;
+}
+
 </style>
 </head>
 
@@ -1628,14 +1644,7 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
           <a href="mailto:info@gama-service.com">Scrivici una email</a>
         </div>
       </div>
-      <aside class="gama-mega-feature">
-        <img src="assets/img-08-b7b47efa6681.webp" alt="GaMa Service servizi integrati">
-        <div class="gama-mega-feature-content">
-          <strong>Un unico partner operativo per impianti, edilizia e facility.</strong>
-          <a href="servizi.html">Vai ai servizi</a>
-        </div>
-      </aside>
-    </div>
+</div>
   </div>
 </div>
 
