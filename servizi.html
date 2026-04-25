@@ -484,16 +484,7 @@
       gap: 34px;
       margin-bottom: 48px;
     }
-    .footer-logo {
-      width: 62px;
-      height: 62px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #111;
-      padding: 2px;
-      box-shadow: 0 0 0 1px rgba(255,255,255,.12), 0 0 28px rgba(245,144,20,.28);
-    }
-    footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
+footer h4 { color: var(--white); margin-bottom: 18px; font-size: 16px; }
     footer p, footer a, footer li { color: var(--muted); font-size: 14px; }
     footer ul { list-style: none; display: grid; gap: 10px; }
     footer a:hover { color: var(--accent-2); }
@@ -1016,6 +1007,21 @@
       font-size: 13px !important;
     }
 
+  
+    /* FOOTER CLEAN FIX */
+    footer .brand {
+      position: static !important;
+      transform: none !important;
+    }
+
+    .footer-grid {
+      align-items: start;
+    }
+
+    .footer-grid > div {
+      min-width: 0;
+    }
+
   </style>
 </head>
 
@@ -1271,10 +1277,6 @@
   <footer>
     <div class="container footer-grid">
       <div>
-        <div class="brand" style="margin-bottom:18px">
-          <img src="assets/img-02-1f57fc19aa46.gif" alt="GaMa Service logo" class="footer-logo">
-          <span>GaMa Service</span>
-        </div>
         <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p>
         <p style="margin-top:14px">P.IVA 12048300961</p>
       </div>
