@@ -5,11 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Impianti Elettrici — GaMa Service</title>
-  <meta name="description" content="Impianti elettrici civili e industriali, cabine di tensione, quadri elettrici, automazione e manutenzione." />
+  <title>Impianti Elettrici Industriali e Civili — GaMa Service</title>
+  <meta name="description" content="Impianti elettrici industriali e civili GaMa Service: cabine elettriche, quadri, automazione, fibra ottica, cablaggio strutturato, antifurti e manutenzione ascensori." />
+  <meta name="keywords" content="impianti elettrici, cabine elettriche, quadri elettrici, automazione industriale, fibra ottica, cablaggio strutturato, antifurti, GaMa Service" />
+  <meta name="author" content="GaMa Service" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#07111f" />
   <link rel="canonical" href="https://www.gama-service.com/impianti-elettrici.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="GaMa Service" />
+  <meta property="og:title" content="Impianti Elettrici Industriali e Civili — GaMa Service" />
+  <meta property="og:description" content="Soluzioni sicure, efficienti e conformi per impianti elettrici industriali e civili." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +29,21 @@
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Impianti Elettrici Industriali e Civili",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "GaMa Service"
+    },
+    "areaServed": "Lombardia",
+    "serviceType": "Impianti elettrici",
+    "description": "Progettazione, installazione, manutenzione e certificazione di impianti elettrici industriali e civili."
+  }
+  </script>
 
   <style>
     :root {
@@ -48,11 +71,14 @@
       font-family: var(--font-body);
       background:
         radial-gradient(circle at 82% 10%, rgba(245,144,20,.16), transparent 32%),
-        linear-gradient(180deg, #07111f 0%, #081526 50%, #050a12 100%);
+        radial-gradient(circle at 12% 72%, rgba(255,178,71,.06), transparent 28%),
+        linear-gradient(180deg, #07111f 0%, #081526 52%, #050a12 100%);
       color: var(--text);
       line-height: 1.55;
       -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
     }
+
     body::before {
       content: "";
       position: fixed;
@@ -65,6 +91,7 @@
       mask-image: radial-gradient(circle at 50% 18%, #000 15%, transparent 75%);
       z-index: -1;
     }
+
     a { color: inherit; text-decoration: none; }
     img, svg { display: block; max-width: 100%; }
     .container { width: min(var(--container), calc(100% - 40px)); margin: 0 auto; }
@@ -188,26 +215,21 @@
       gap: 7px;
       cursor: pointer;
       border: 0;
-      background: transparent;
-      text-decoration: none;
-      color: inherit;
+      background: rgba(245,144,20,.08);
+      color: var(--accent-2);
       font: inherit;
       font-weight: 800;
       padding: 12px 18px;
       border-radius: 12px;
+      text-decoration: none;
       transition: color .2s ease, background .2s ease;
     }
+    .nav-dropdown-trigger::after { display: none !important; }
     .nav-dropdown-trigger svg {
       width: 14px;
       height: 14px;
       stroke: currentColor;
       transition: transform .2s ease;
-    }
-    .nav-item:hover .nav-dropdown-trigger,
-    .nav-item:focus-within .nav-dropdown-trigger,
-    .nav-dropdown-trigger.active {
-      color: var(--accent-2);
-      background: rgba(245,144,20,.08);
     }
     .nav-item:hover .nav-dropdown-trigger svg,
     .nav-item:focus-within .nav-dropdown-trigger svg { transform: rotate(180deg); }
@@ -252,7 +274,6 @@
       transform: translateX(4px);
     }
     .dropdown-menu a::after { display: none !important; }
-    .nav-dropdown-trigger::after { display: none !important; }
 
     .btn {
       display: inline-flex;
@@ -263,12 +284,11 @@
       border-radius: 999px;
       font-weight: 800;
       border: 1px solid transparent;
-      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+      transition: transform .2s ease, background .2s ease;
     }
     .btn:hover { transform: translateY(-2px); }
     .btn-primary { background: var(--accent); color: var(--dark); }
     .btn-primary:hover { background: var(--accent-2); }
-    .btn-secondary { border-color: var(--line); background: rgba(255,255,255,.04); }
 
     .eyebrow {
       display: inline-flex;
@@ -289,93 +309,27 @@
     }
 
     .hero {
-      padding: 96px 0 68px;
-      position: relative;
-      overflow: hidden;
+      padding: 96px 0 46px;
+      text-align: center;
     }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 44px;
-      align-items: center;
-    }
-    .hero h1 {
+    .hero .eyebrow { justify-content: center; }
+    h1 {
       font-family: var(--font-display);
-      font-size: clamp(52px, 7vw, 96px);
-      line-height: .92;
-      letter-spacing: -.075em;
+      font-size: clamp(54px, 8vw, 108px);
+      line-height: .88;
+      letter-spacing: -.08em;
       margin-bottom: 26px;
     }
     .hero p {
       color: var(--muted);
       font-size: 19px;
-      max-width: 680px;
-      margin-bottom: 32px;
-    }
-    .hero-panel {
-      min-height: 430px;
-      border-radius: 34px;
-      border: 1px solid rgba(255,255,255,.14);
-      background:
-        radial-gradient(circle at 80% 22%, rgba(245,144,20,.22), transparent 30%),
-        linear-gradient(135deg, rgba(255,255,255,.075), rgba(255,255,255,.025));
-      box-shadow: var(--shadow);
-      padding: 30px;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-panel::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
-      background-size: 42px 42px;
-      opacity: .7;
-    }
-    .hero-panel-content {
-      position: relative;
-      z-index: 2;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-    .hero-panel strong {
-      font-family: var(--font-display);
-      font-size: 36px;
-      line-height: 1;
-      letter-spacing: -.055em;
-      display: block;
-      margin-bottom: 18px;
-    }
-    .hero-panel span {
-      color: var(--muted);
-      display: block;
-      max-width: 410px;
+      max-width: 740px;
+      margin: 0 auto 34px;
     }
 
     .services-section {
-      padding: 86px 0 110px;
+      padding: 34px 0 110px;
     }
-    .section-head {
-      text-align: center;
-      max-width: 860px;
-      margin: 0 auto 58px;
-    }
-    .section-head h2 {
-      font-family: var(--font-display);
-      font-size: clamp(42px, 5vw, 72px);
-      line-height: .96;
-      letter-spacing: -.065em;
-      margin-bottom: 22px;
-    }
-    .section-head p {
-      color: var(--muted);
-      font-size: 18px;
-    }
-
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -383,10 +337,9 @@
     }
     .services-grid-bottom {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
-      max-width: 815px;
-      margin: 22px auto 0;
+      margin: 22px 0 0;
     }
     .service-card {
       min-height: 430px;
@@ -419,7 +372,7 @@
     }
     .service-card:hover::before { opacity: 1; }
     .service-img {
-      height: 200px;
+      height: 210px;
       overflow: hidden;
       position: relative;
       background: #0b1728;
@@ -460,11 +413,11 @@
       font-weight: 900;
       margin-bottom: 14px;
     }
-    .service-card h3 {
+    .service-card h2 {
       font-family: var(--font-display);
-      font-size: 27px;
-      line-height: 1.04;
-      letter-spacing: -.055em;
+      font-size: 30px;
+      line-height: 1.02;
+      letter-spacing: -.06em;
       margin-bottom: 15px;
     }
     .service-card p {
@@ -480,6 +433,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      transition: gap .22s ease;
     }
     .service-card:hover .service-link { gap: 12px; }
     .service-link svg {
@@ -490,78 +444,12 @@
       fill: none;
     }
 
-    .detail-section {
-      padding: 90px 0;
-      border-top: 1px solid var(--line);
-    }
-    .detail-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 34px;
-      align-items: stretch;
-    }
-    .detail-media {
-      border-radius: 28px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,.14);
-      min-height: 420px;
-      box-shadow: var(--shadow);
-    }
-    .detail-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(.88) saturate(1.08);
-    }
-    .detail-content {
-      border-radius: 28px;
-      padding: 46px;
-      background:
-        radial-gradient(circle at 84% 18%, rgba(245,144,20,.13), transparent 32%),
-        rgba(16,35,58,.60);
-      border: 1px solid rgba(255,255,255,.13);
-    }
-    .detail-content h2 {
-      font-family: var(--font-display);
-      font-size: clamp(34px, 4vw, 58px);
-      line-height: .98;
-      letter-spacing: -.065em;
-      margin-bottom: 22px;
-    }
-    .detail-content p {
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.75;
-      margin-bottom: 24px;
-    }
-    .feature-list {
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-    .feature-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: #d7e4f4;
-    }
-    .feature-list li::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 12px rgba(245,144,20,.75);
-      margin-top: 9px;
-      flex: 0 0 auto;
-    }
-
     .cta {
       background:
         radial-gradient(circle at 20% 20%, rgba(255,255,255,.20), transparent 32%),
         linear-gradient(135deg, var(--accent), #c46c08);
       color: var(--dark);
-      padding: 86px 0;
+      padding: 82px 0;
     }
     .cta-box {
       display: flex;
@@ -574,7 +462,7 @@
       font-size: clamp(34px, 5vw, 64px);
       line-height: 1;
       letter-spacing: -.06em;
-      max-width: 760px;
+      max-width: 780px;
     }
     .cta .btn {
       background: var(--dark);
@@ -625,30 +513,25 @@
     ::selection { background: rgba(245,144,20,.35); color: #fff; }
 
     @media (max-width: 980px) {
-      .hero-grid,
-      .detail-grid,
-      .cta-box {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        align-items: start;
-      }
       .services-grid,
       .services-grid-bottom,
       .footer-grid {
         grid-template-columns: 1fr 1fr;
       }
+      .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
     @media (max-width: 720px) {
       .nav { height: auto; padding: 18px 0; }
       .nav-links { display: none; }
-      .hero { padding: 58px 0; }
+      .hero { padding: 58px 0 30px; }
       .services-grid,
       .services-grid-bottom,
       .footer-grid {
         grid-template-columns: 1fr;
       }
-      .detail-content { padding: 32px; }
-      .detail-media { min-height: 300px; }
       .nav-item { display: none; }
     }
 
@@ -660,8 +543,197 @@
         transition-duration: .01ms !important;
       }
     }
-  </style>
+  
+    .detail-page {
+      padding: 86px 0 110px;
+    }
+    .detail-grid {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+    .detail-media {
+      border-radius: 30px;
+      overflow: hidden;
+      min-height: 520px;
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: var(--shadow);
+    }
+    .detail-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(.9) saturate(1.08);
+    }
+    .detail-content {
+      border-radius: 30px;
+      padding: clamp(34px, 5vw, 56px);
+      background:
+        radial-gradient(circle at 84% 18%, rgba(245,144,20,.15), transparent 32%),
+        rgba(16,35,58,.66);
+      border: 1px solid rgba(255,255,255,.13);
+      box-shadow: var(--shadow);
+    }
+    .detail-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 5vw, 72px);
+      line-height: .94;
+      letter-spacing: -.07em;
+      margin-bottom: 22px;
+    }
+    .detail-content p {
+      color: #d7e4f4;
+      font-size: 18px;
+      line-height: 1.75;
+      margin-bottom: 26px;
+    }
+    .sections-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 42px;
+    }
+    .section-block {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      padding: 30px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.022)),
+        rgba(16,35,58,.72);
+      border: 1px solid rgba(255,255,255,.13);
+      box-shadow: 0 18px 54px rgba(0,0,0,.20);
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .section-block::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 84% 12%, rgba(245,144,20,.16), transparent 30%);
+      opacity: 0;
+      transition: opacity .25s ease;
+      pointer-events: none;
+    }
+    .section-block:hover {
+      transform: translateY(-6px);
+      border-color: rgba(245,144,20,.62);
+      box-shadow: 0 28px 80px rgba(0,0,0,.30), 0 0 34px rgba(245,144,20,.12);
+    }
+    .section-block:hover::before { opacity: 1; }
+    .section-block.highlight {
+      grid-column: 1 / -1;
+      background:
+        radial-gradient(circle at 84% 12%, rgba(245,144,20,.22), transparent 30%),
+        rgba(16,35,58,.82);
+      border-color: rgba(245,144,20,.35);
+    }
+    .section-block > * { position: relative; z-index: 2; }
+    .section-block h3 {
+      font-family: var(--font-display);
+      font-size: 25px;
+      line-height: 1.1;
+      letter-spacing: -.045em;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .emoji {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: rgba(245,144,20,.12);
+      border: 1px solid rgba(245,144,20,.24);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex: 0 0 auto;
+    }
+    .section-block p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.72;
+      margin-bottom: 16px;
+    }
+    .section-block strong { color: #fff; }
+    .checklist {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      color: #d7e4f4;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    .ck {
+      width: 20px;
+      height: 20px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      margin-top: 2px;
+      box-shadow: 0 0 14px rgba(245,144,20,.55);
+    }
+    .ck svg {
+      width: 11px;
+      height: 11px;
+      stroke: #07111f;
+      stroke-width: 4;
+      fill: none;
+    }
+    .cta-mini {
+      margin-top: 34px;
+      padding: 34px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.22), transparent 32%),
+        linear-gradient(135deg, var(--accent), #c46c08);
+      color: #07111f;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      box-shadow: 0 28px 80px rgba(245,144,20,.18);
+    }
+    .cta-mini p {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+    .cta-mini p span {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.5;
+      margin-top: 10px;
+      color: rgba(7,17,31,.76);
+    }
+    .cta-mini .btn {
+      background: #07111f;
+      color: #fff;
+      min-width: 180px;
+    }
+    @media (max-width: 980px) {
+      .detail-grid, .sections-grid { grid-template-columns: 1fr; }
+      .detail-media { min-height: 340px; }
+      .cta-mini { flex-direction: column; align-items: flex-start; }
+    }
+</style>
 </head>
+
 <body>
 
   <div class="topbar">
@@ -683,7 +755,10 @@
         <a href="chi-siamo.html">Chi siamo</a>
 
         <div class="nav-item">
-          <a class="nav-dropdown-trigger active" href="servizi.html" aria-haspopup="true" aria-expanded="false">Servizi <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="nav-dropdown-trigger active" href="servizi.html" aria-haspopup="true" aria-expanded="false">
+            Servizi
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
           <div class="dropdown-menu" aria-label="Sottomenu servizi">
             <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a>
             <a href="impianti-elettrici.html">Impianti Elettrici</a>
@@ -704,85 +779,121 @@
   
 <main>
   <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">Energia</div>
-        <h1>Impianti Elettrici</h1>
-        <p>Realizziamo impianti elettrici civili e industriali con attenzione alla sicurezza, alla continuità operativa e alla qualità esecutiva.</p>
-        <a class="btn btn-primary" href="servizi.html">Indietro ai servizi</a>
-      </div>
-
-      <aside class="hero-panel">
-        <div class="hero-panel-content">
-          <strong>Impianti Elettrici</strong>
-          <span>Impianti elettrici civili e industriali, cabine di tensione, quadri elettrici, automazione e manutenzione.</span>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="services-section">
-    <div class="container detail-grid">
-      <div class="detail-media">
-        <img src="assets/img-04-779ff0e7ad6d.webp" alt="Impianti Elettrici">
-      </div>
-      <div class="detail-content">
-        <div class="eyebrow">Dettaglio servizio</div>
-        <h2>Impianti Elettrici</h2>
-        <p>Realizziamo impianti elettrici civili e industriali con attenzione alla sicurezza, alla continuità operativa e alla qualità esecutiva.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="content">
     <div class="container">
+      <div class="eyebrow">Energia</div>
+      <h1>Impianti Elettrici Industriali e Civili</h1>
+      <p><strong>GaMa Service</strong> progetta e realizza impianti elettrici industriali e civili a norma, garantendo soluzioni sicure, efficienti e conformi alle <strong>normative CEI</strong> e alla <strong>certificazione IMQ</strong>.</p>
+      <a class="btn btn-primary" href="servizi.html">Indietro ai servizi</a>
+    </div>
+  </section>
+
+  <section class="detail-page">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-media">
+          <img src="assets/img-04-779ff0e7ad6d.webp" alt="Impianti elettrici industriali e civili">
+        </div>
+        <div class="detail-content">
+          <div class="eyebrow">Servizio elettrico</div>
+          <h2>Soluzioni elettriche sicure, certificate e performanti</h2>
+          <p>Dalla distribuzione elettrica alla predisposizione di punti luce e prese, dalla costruzione di quadri alla fibra ottica, gestiamo ogni fase con metodo, sicurezza e qualità esecutiva.</p>
+          <ul class="checklist">
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Impianti elettrici industriali e civili</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Cabine elettriche di alta, media e bassa tensione</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Quadri elettrici, automazione e cablaggio strutturato</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sistemi di sicurezza, fibra ottica e manutenzione ascensori</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="sections-grid">
         
-          <div class="section-block">
-            <h3><span class="emoji">⚡</span> Impianti industriali e civili</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Progettazione e realizzazione impianti</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Distribuzione elettrica</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Adeguamenti e ampliamenti</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Verifiche tecniche</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🧰</span> Quadri elettrici e cabine</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Quadri di distribuzione</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Cabine di tensione</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Componentistica certificata</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Controllo e manutenzione</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🤖</span> Automazione</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sistemi di comando</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Automazione impianti</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione tecnica</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Efficienza e controllo</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🛠️</span> Manutenzione</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi ordinari</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi straordinari</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ricerca guasti</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto continuo</li>
-            </ul>
-          </div>
-        
+        <article class="section-block">
+          <h3><span class="emoji">⚡</span> Impianti Elettrici Industriali e Civili</h3>
+          <p>Dalla distribuzione elettrica alla predisposizione di punti luce e prese, ci occupiamo di ogni fase:</p>
+          <ul class="checklist"><li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Progettazione e installazione</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Collaudo e <strong>dichiarazione di conformità</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Rifacimento impianti elettrici</strong> esistenti</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi per abitazioni, uffici, capannoni e strutture commerciali</li></ul>
+        </article>
+
+        <article class="section-block">
+          <h3><span class="emoji">🔌</span> Cabine Elettriche di Alta, Media e Bassa Tensione</h3>
+          <p>Gestiamo l'<strong>installazione e manutenzione di cabine elettriche</strong> di alta, media e bassa tensione.</p>
+          <ul class="checklist"><li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Verifiche periodiche e <strong>prove di isolamento</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi di adeguamento</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Manutenzione programmata delle cabine MT/BT</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Continuità operativa e sicurezza secondo le normative vigenti</li></ul>
+        </article>
+
+        <article class="section-block">
+          <h3><span class="emoji">🔧</span> Costruzione e Assemblaggio Quadri Elettrici</h3>
+          <p>Ci occupiamo della <strong>costruzione e assemblaggio di quadri elettrici</strong> di distribuzione, comando e automazione.</p>
+          <ul class="checklist"><li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Progettato su misura</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Cablato con componenti di alta qualità</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sottoposto a collaudi rigorosi</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Conforme alle normative <strong>EN 61439</strong></li></ul>
+        </article>
+
+        <article class="section-block">
+          <h3><span class="emoji">🏭</span> Impianti Strumentali e di Automazione Industriale</h3>
+          <p>Siamo specializzati nella progettazione e installazione di <strong>impianti strumentali e di automazione industriale</strong>, integrando tecnologie avanzate per ottimizzare i processi produttivi e migliorare l'<strong>efficienza operativa</strong>.</p>
+          
+        </article>
+
+        <article class="section-block">
+          <h3><span class="emoji">🌐</span> Impianti in Fibra Ottica</h3>
+          <p>Progettiamo e realizziamo <strong>impianti in fibra ottica</strong> per connessioni ad alta velocità in ambito residenziale, aziendale e industriale.</p>
+          <ul class="checklist"><li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Posa dei <strong>cavi in fibra ottica</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Terminazione e giunzione</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni per <strong>reti FTTH e FTTB</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Connettività ultraveloce</strong> a bassa latenza</li></ul>
+        </article>
+
+        <article class="section-block">
+          <h3><span class="emoji">🖧</span> Impianti Elettrici REC e Cablaggio Strutturato</h3>
+          <p>Realizziamo <strong>impianti elettrici REC</strong> e soluzioni di <strong>cablaggio strutturato</strong> per reti dati aziendali.</p>
+          <ul class="checklist"><li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Predisposizione delle <strong>dorsali di rete</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Configurazione dei punti di accesso</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Infrastrutture performanti e scalabili</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ideali per uffici, <strong>data center</strong> e ambienti produttivi</li></ul>
+        </article>
+
+        <article class="section-block">
+          <h3><span class="emoji">🔒</span> Antifurti e Sistemi di Sicurezza</h3>
+          <p>Progettiamo, installiamo e programmiamo <strong>impianti antifurto</strong> e <strong>sistemi di allarme</strong> per abitazioni, uffici e attività commerciali.</p>
+          <ul class="checklist"><li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Antifurti perimetrali e volumetrici</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sensori di movimento e sirene</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Centrali di allarme</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Videosorveglianza TVCC</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Controllo da remoto tramite app</strong></li></ul>
+        </article>
+
+        <article class="section-block">
+          <h3><span class="emoji">🛗</span> Manutenzione Ascensori</h3>
+          <p>Offriamo servizi di <strong>manutenzione ascensori</strong> per garantire sicurezza e funzionalità nel tempo.</p>
+          <ul class="checklist"><li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Manutenzione ordinaria e straordinaria</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Adeguamento alle normative</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi rapidi e assistenza</li></ul>
+        </article>
+
+
+        <article class="section-block highlight">
+          <h3><span class="emoji">⭐</span> Perché scegliere GaMa Service?</h3>
+          <p>Con esperienza nel settore elettrico, ci distinguiamo per professionalità, puntualità e <strong>assistenza post-vendita</strong>.</p>
+          <ul class="checklist">
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Preventivi gratuiti</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Conformità alle <strong>normative CEI</strong> e certificazione <strong>IMQ</strong></li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Servizio clienti sempre disponibile</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Migliori marche e componenti del settore</li>
+<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Qualità, durabilità e <strong>certificazione degli impianti</strong></li>
+          </ul>
+        </article>
       </div>
 
-      <div class="cta-bar" id="contatti">
+      <div class="cta-mini" id="contatti">
         <p>Hai bisogno di un preventivo?<span>Contattaci per una consulenza gratuita e senza impegno.</span></p>
-        <a href="tel:+390396776853" class="cta-btn">Contattaci</a>
+        <a href="tel:+390396776853" class="btn">Contattaci</a>
       </div>
     </div>
   </section>
@@ -833,7 +944,6 @@
 
     <div class="container footer-bottom">
       <span>© GaMa Service. Tutti i diritti riservati.</span>
-      <span></span>
     </div>
   </footer>
 
@@ -857,16 +967,6 @@
     }
     updateDateTime();
     setInterval(updateDateTime, 1000);
-  </script>
-
-  <script>
-    (function () {
-      const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-      if (currentPath === 'servizi.html') {
-        const trigger = document.querySelector('.nav-dropdown-trigger');
-        if (trigger) trigger.classList.add('active');
-      }
-    })();
   </script>
 
 </body>
