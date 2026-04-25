@@ -2320,7 +2320,32 @@ body.gama-menu-open {
   }
 }
 
-  </style>
+  
+/* MENU SOLO HAMBURGER: tutto integrato nel mega menu */
+.nav-links {
+  display: none !important;
+}
+
+.nav {
+  justify-content: space-between !important;
+  gap: 24px !important;
+}
+
+.gama-menu-toggle {
+  margin-right: auto !important;
+}
+
+.nav > .brand {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.nav .btn-primary {
+  margin-left: auto !important;
+}
+
+</style>
 </head>
 <body>
   <div class="topbar">
@@ -2357,8 +2382,9 @@ body.gama-menu-open {
   <div class="gama-mega" id="gamaMegaMenu" aria-hidden="true">
     <div class="gama-mega-layout">
       <aside class="gama-mega-left">
-        <a class="active" href="servizi.html">Servizi</a>
+        <a class="active" href="index.html">Home</a>
         <a href="chi-siamo.html">Chi siamo</a>
+        <a href="servizi.html">Servizi</a>
         <a href="index.html#soluzioni">Soluzioni</a>
         <a href="index.html#contatti">Contatti</a>
       </aside>
@@ -2380,6 +2406,7 @@ body.gama-menu-open {
 
           <div class="gama-mega-col">
             <h4>Edilizia</h4>
+            <a href="edilizia.html">Edilizia</a>
             <a href="edilizia.html">Ristrutturazioni</a>
             <a href="edilizia.html">Nuove costruzioni</a>
             <a href="edilizia.html">Manutenzioni edili</a>
@@ -2387,6 +2414,7 @@ body.gama-menu-open {
             <div class="gama-mega-rule"></div>
 
             <h4>Facility Management</h4>
+            <a href="facility-management.html">Facility Management</a>
             <a href="facility-management.html">Arredamento</a>
             <a href="facility-management.html">Facchinaggio</a>
             <a href="facility-management.html">Giardinaggio</a>
@@ -2403,7 +2431,9 @@ body.gama-menu-open {
 
             <div class="gama-mega-rule"></div>
 
-            <h4>Supporto</h4>
+            <h4>Azienda e supporto</h4>
+            <a href="chi-siamo.html">Chi siamo</a>
+            <a href="servizi.html">Tutti i servizi</a>
             <a href="tel:+390396776853">Chiama GaMa Service</a>
             <a href="mailto:info@gama-service.com">Scrivici una email</a>
           </div>

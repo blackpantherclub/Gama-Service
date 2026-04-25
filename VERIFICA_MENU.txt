@@ -1,80 +1,74 @@
 {
-  "html_count": 9,
-  "html_files": [
-    "chi-siamo.html",
-    "edilizia.html",
-    "facility-management.html",
-    "impianti-elettrici.html",
-    "impianti-meccanici-e-termotecnici.html",
-    "impianti-speciali.html",
-    "index.html",
-    "manutenzione.html",
-    "servizi.html"
-  ],
-  "menu_counts": {
-    "chi-siamo.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "edilizia.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "facility-management.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "impianti-elettrici.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "impianti-meccanici-e-termotecnici.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "impianti-speciali.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "index.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "manutenzione.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    },
-    "servizi.html": {
-      "gama_toggle": 1,
-      "gama_overlay": 1,
-      "old_mega_toggle": 0,
-      "old_mega_overlay": 0,
-      "nav_links": 1
-    }
+  "chi-siamo.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
   },
-  "status": "Ogni pagina deve avere 1 gama-menu-toggle, 1 gamaMegaMenu, 0 megaMenu vecchi, 1 nav-links."
+  "edilizia.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  },
+  "facility-management.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  },
+  "impianti-elettrici.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  },
+  "impianti-speciali.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  },
+  "index.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  },
+  "manutenzione.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  },
+  "servizi.html": {
+    "gama_toggle": 1,
+    "gama_overlay": 1,
+    "old_mega_toggle": 0,
+    "old_mega_overlay": 0,
+    "nav_links_hidden_css": true,
+    "visible_top_nav_should_be_hidden": true
+  }
 }
