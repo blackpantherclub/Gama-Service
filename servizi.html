@@ -236,6 +236,7 @@
       cursor: pointer;
       border: 0;
       background: transparent;
+      text-decoration: none;
       color: inherit;
       font: inherit;
       font-weight: 800;
@@ -298,6 +299,7 @@
       transform: translateX(4px);
     }
     .dropdown-menu a::after { display: none !important; }
+    .nav-dropdown-trigger::after { display: none !important; }
 
     .btn {
       display: inline-flex;
@@ -728,10 +730,7 @@
         <a href="chi-siamo.html">Chi siamo</a>
 
         <div class="nav-item">
-          <button class="nav-dropdown-trigger active" type="button" aria-haspopup="true" aria-expanded="false">
-            Servizi
-            <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <a class="nav-dropdown-trigger active" href="servizi.html" aria-haspopup="true" aria-expanded="false">Servizi <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="dropdown-menu" aria-label="Sottomenu servizi">
             <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a>
             <a href="servizi.html#elettrici">Impianti Elettrici</a>
