@@ -36,10 +36,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307111f'/%3E%3Cpath d='M16 42V22h32v7H25v13z' fill='%23f59014'/%3E%3Cpath d='M25 35h20v7H25z' fill='%23ffb247'/%3E%3C/svg%3E" />
-
-  <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
@@ -962,6 +966,38 @@
     .brand:hover {
       opacity: .92;
       transform: translateY(-1px);
+    }
+
+  
+    /* LIVE CLOCK HUD */
+    .live-datetime {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      white-space: nowrap;
+      color: #f59014 !important;
+      font-family: var(--font-mono, 'JetBrains Mono', monospace);
+      font-size: 12px;
+      letter-spacing: .06em;
+      padding: 5px 10px;
+      border: 1px solid rgba(245,144,20,.36);
+      border-radius: 999px;
+      background:
+        linear-gradient(90deg, rgba(245,144,20,.12), rgba(245,144,20,.035));
+      box-shadow:
+        inset 0 0 14px rgba(245,144,20,.08),
+        0 0 18px rgba(245,144,20,.16);
+      text-shadow: 0 0 10px rgba(245,144,20,.55);
+    }
+
+    .live-datetime::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #f59014;
+      box-shadow: 0 0 12px rgba(245,144,20,.95);
+      animation: livePulse 1.4s ease-in-out infinite;
     }
 
   </style>
