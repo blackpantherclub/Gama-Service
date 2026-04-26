@@ -1,0 +1,74 @@
+{
+  "chi-siamo.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "contatti.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "edilizia.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "facility-management.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "impianti-elettrici.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "impianti-speciali.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "index.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "manutenzione.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "servizi.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "sitemap.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  },
+  "soluzioni.html": {
+    "ultra_css": true,
+    "ultra_js": true,
+    "minified": true,
+    "has_html": true
+  }
+}
