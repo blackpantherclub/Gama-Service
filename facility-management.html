@@ -146,7 +146,19 @@ img,svg{ -webkit-user-drag:none!important; user-drag:none!important }
 .gama-img-lock{position:relative!important}
 .gama-img-lock:after{content:"";position:absolute;inset:0;z-index:5;background:transparent}
 body:before{content:"© GaMa Service";position:fixed;right:18px;bottom:14px;z-index:999999;font-size:11px;color:rgba(255,255,255,.16);pointer-events:none;letter-spacing:.08em}
-</style> <meta name="referrer" content="strict-origin-when-cross-origin"></head><style>
+</style> <meta name="referrer" content="strict-origin-when-cross-origin">
+<style id="gama-global-form-safe-css">
+input, textarea, select, button {
+  pointer-events: auto !important;
+}
+input, textarea {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+</style>
+</head><style>
 .facility-hero{padding:92px 0 54px}
 .facility-hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:38px;align-items:stretch}
 .facility-media{min-height:460px;border-radius:34px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 28px 80px rgba(0,0,0,.30);position:relative}
