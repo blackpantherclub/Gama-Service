@@ -1,0 +1,68 @@
+{
+  "chi-siamo.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "contatti.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "edilizia.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "facility-management.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "impianti-elettrici.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "impianti-speciali.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "index.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "manutenzione.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "servizi.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  },
+  "soluzioni.html": {
+    "soluzioni_link": true,
+    "old_soluzioni_link": 0,
+    "menu": 1,
+    "hamburger": 1
+  }
+}

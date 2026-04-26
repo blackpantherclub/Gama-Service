@@ -1,0 +1,106 @@
+{
+  "index.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "chi-siamo.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "servizi.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "soluzioni.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "contatti.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "impianti-elettrici.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "impianti-speciali.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "edilizia.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "facility-management.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "manutenzione.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "sitemap.html": {
+    "title": true,
+    "description": true,
+    "robots": true,
+    "canonical": true,
+    "og": true,
+    "json_ld": true
+  },
+  "sitemap.xml": {
+    "exists": true,
+    "urls": 12
+  },
+  "robots.txt": {
+    "exists": true,
+    "sitemap_line": true
+  }
+}
