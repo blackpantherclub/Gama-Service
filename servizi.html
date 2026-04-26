@@ -2220,6 +2220,126 @@ body.gama-menu-open .gama-menu-toggle:hover .gama-menu-label {
   }
 }
 
+
+/* ===== CARD SERVIZI: HOVER PREMIUM + LINK SEPARATI ===== */
+.service-card,
+.card {
+  position: relative !important;
+}
+
+.service-card .card-visual,
+.card .card-visual,
+.service-card .service-img,
+.card .service-img {
+  position: relative !important;
+  display: block !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+}
+
+.service-image-link {
+  position: relative !important;
+  display: block !important;
+  overflow: hidden !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.service-image-link img,
+.service-card img,
+.card img {
+  transition: transform .55s cubic-bezier(.2,.8,.2,1), filter .55s ease !important;
+}
+
+.service-image-link::after {
+  content: "Scopri il servizio →";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 1000;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: 13px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(245,144,20,.32), transparent 35%),
+    rgba(5,10,18,.48);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .28s ease, transform .28s ease;
+  pointer-events: none;
+}
+
+.service-image-link::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(245,144,20,.58);
+  border-radius: 18px;
+  opacity: 0;
+  transform: scale(.96);
+  transition: opacity .28s ease, transform .28s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.service-image-link:hover img {
+  transform: scale(1.065);
+  filter: brightness(.72) saturate(1.22);
+}
+
+.service-image-link:hover::after,
+.service-image-link:hover::before {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.service-card:hover,
+.card:hover {
+  border-color: rgba(245,144,20,.72) !important;
+  box-shadow:
+    0 34px 90px rgba(0,0,0,.40),
+    0 0 38px rgba(245,144,20,.13),
+    inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+
+.service-card a[href="contatti.html"],
+.card a[href="contatti.html"],
+.service-card .cta,
+.card .cta {
+  position: relative;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-2, #ffb247) !important;
+  text-decoration: none !important;
+  font-weight: 1000 !important;
+  transition: color .22s ease, transform .22s ease, text-shadow .22s ease;
+}
+
+.service-card a[href="contatti.html"]:hover,
+.card a[href="contatti.html"]:hover,
+.service-card .cta:hover,
+.card .cta:hover {
+  color: #ff3b3b !important;
+  transform: translateX(5px);
+  text-shadow: 0 0 18px rgba(255,59,59,.26);
+}
+
+@media (max-width: 780px) {
+  .service-image-link::after,
+  .service-image-link::before {
+    display: none !important;
+  }
+
+  .service-image-link:hover img {
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
 </style>
 </head>
 
@@ -2293,57 +2413,57 @@ body.gama-menu-open .gama-menu-toggle:hover .gama-menu-label {
     <section class="services-section">
       <div class="container">
         <div class="services-grid">
-          <a href="impianti-meccanici-e-termotecnici.html" class="service-card">
-            <div class="service-img"><img src="assets/img-03-0d421d0fb6c7.webp" alt="Impianti meccanici e termotecnici"></div>
+          <div href="impianti-meccanici-e-termotecnici.html" class="service-card">
+            <div class="service-img"><a href="impianti-meccanici-e-termotecnici.html" class="service-image-link"><img src="assets/img-03-0d421d0fb6c7.webp" alt="Impianti meccanici e termotecnici"></a></div>
             <div class="service-content">
               <div class="service-tag">Impianti</div>
               <h2>Meccanici e termotecnici</h2>
               <p>Riscaldamento, condizionamento, impianti idraulici e solari-termici per comfort ed efficienza energetica.</p>
               <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-          </a>
+          </div>
 
-          <a href="impianti-elettrici.html" class="service-card">
-            <div class="service-img"><img src="assets/img-04-779ff0e7ad6d.webp" alt="Impianti elettrici"></div>
+          <div href="impianti-elettrici.html" class="service-card">
+            <div class="service-img"><a href="impianti-elettrici.html" class="service-image-link"><img src="assets/img-04-779ff0e7ad6d.webp" alt="Impianti elettrici"></a></div>
             <div class="service-content">
               <div class="service-tag">Energia</div>
               <h2>Impianti elettrici</h2>
               <p>Impianti industriali e civili, cabine di tensione, quadri elettrici, automazione e manutenzione.</p>
               <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-          </a>
+          </div>
 
-          <a href="impianti-speciali.html" class="service-card">
-            <div class="service-img"><img src="assets/img-05-b0d297e2d25d.webp" alt="Impianti speciali"></div>
+          <div href="impianti-speciali.html" class="service-card">
+            <div class="service-img"><a href="impianti-speciali.html" class="service-image-link"><img src="assets/img-05-b0d297e2d25d.webp" alt="Impianti speciali"></a></div>
             <div class="service-content">
               <div class="service-tag">Tecnologia</div>
               <h2>Impianti speciali</h2>
               <p>Reti dati, data center, videosorveglianza, controllo accessi e building automation.</p>
               <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-          </a>
+          </div>
         </div>
 
         <div class="services-grid-bottom">
-          <a href="edilizia.html" class="service-card">
-            <div class="service-img"><img src="assets/img-06-4849d33d28c9.webp" alt="Edilizia"></div>
+          <div href="edilizia.html" class="service-card">
+            <div class="service-img"><a href="edilizia.html" class="service-image-link"><img src="assets/img-06-4849d33d28c9.webp" alt="Edilizia"></a></div>
             <div class="service-content">
               <div class="service-tag">Edile</div>
               <h2>Edilizia</h2>
               <p>Ristrutturazioni, nuove costruzioni, manutenzione ordinaria e straordinaria di edifici civili e industriali.</p>
               <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-          </a>
+          </div>
 
-          <a href="facility-management.html" class="service-card">
-            <div class="service-img"><img src="assets/img-07-cea2c2452fe9.webp" alt="Facility management"></div>
+          <div href="facility-management.html" class="service-card">
+            <div class="service-img"><a href="facility-management.html" class="service-image-link"><img src="assets/img-07-cea2c2452fe9.webp" alt="Facility management"></a></div>
             <div class="service-content">
               <div class="service-tag">Gestione</div>
               <h2>Facility Management</h2>
               <p>Arredamento, facchinaggio, giardinaggio, pulizie e gestione completa degli spazi aziendali.</p>
               <span class="service-link">Scopri di più <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-          </a>
+          </div>
 
           
 
