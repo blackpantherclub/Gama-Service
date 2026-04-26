@@ -1922,9 +1922,118 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
   }
 }
 
+
+/* ===== LOGO PREMIUM: GLOW DINAMICO MOUSE ===== */
+.nav > .brand {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 360 !important;
+  isolation: isolate;
+  overflow: visible !important;
+}
+
+.nav > .brand::before {
+  content: "";
+  position: absolute;
+  inset: -22px;
+  border-radius: 999px;
+  background:
+    radial-gradient(
+      circle at var(--logo-x, 50%) var(--logo-y, 50%),
+      rgba(245,144,20,.55),
+      rgba(245,144,20,.20) 28%,
+      transparent 68%
+    );
+  opacity: 0;
+  filter: blur(4px);
+  transition: opacity .28s ease;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.nav > .brand:hover::before {
+  opacity: 1;
+}
+
+.nav > .brand .brand-logo {
+  width: 58px !important;
+  height: 58px !important;
+  object-fit: contain !important;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(245,144,20,.18));
+  transition: transform .28s ease, filter .28s ease;
+}
+
+.nav > .brand:hover .brand-logo {
+  transform: scale(1.08);
+  filter:
+    drop-shadow(0 0 10px rgba(245,144,20,.45))
+    drop-shadow(0 0 22px rgba(245,144,20,.22));
+}
+
+.nav > .brand span {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 780px) {
+  .nav > .brand {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .nav > .brand::before {
+    display: none !important;
+  }
+
+  .nav > .brand .brand-logo {
+    width: 46px !important;
+    height: 46px !important;
+    filter: none !important;
+  }
+
+  .nav > .brand:hover .brand-logo {
+    transform: none !important;
+  }
+}
+
 </style>
 </head>
+
+<style>
+.facility-hero{padding:92px 0 54px}
+.facility-hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:38px;align-items:stretch}
+.facility-media{min-height:460px;border-radius:34px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 28px 80px rgba(0,0,0,.30);position:relative}
+.facility-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(7,17,31,.82) 100%),radial-gradient(circle at 82% 12%,rgba(245,144,20,.28),transparent 28%)}
+.facility-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.88) saturate(1.12)}
+.facility-copy{border-radius:34px;padding:clamp(34px,5vw,60px);background:radial-gradient(circle at 84% 18%,rgba(245,144,20,.16),transparent 32%),linear-gradient(180deg,rgba(255,255,255,.065),rgba(255,255,255,.028)),rgba(16,35,58,.66);border:1px solid rgba(255,255,255,.13);box-shadow:0 28px 80px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.06);display:flex;flex-direction:column;justify-content:center}
+.facility-copy h1{font-family:var(--font-display);font-size:clamp(46px,6vw,86px);line-height:.92;letter-spacing:-.075em;margin-bottom:24px}
+.facility-copy p{color:#d7e4f4;font-size:18px;line-height:1.8;max-width:760px}
+.facility-copy strong{color:#fff}
+.facility-back{display:inline-flex;color:var(--accent-2);font-weight:900;margin-bottom:22px;width:fit-content}
+.facility-content{padding:34px 0 100px}
+.facility-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.facility-block{position:relative;overflow:hidden;border-radius:24px;padding:30px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.022)),rgba(16,35,58,.72);border:1px solid rgba(255,255,255,.13);box-shadow:0 18px 54px rgba(0,0,0,.20),inset 0 1px 0 rgba(255,255,255,.05);transition:.25s}
+.facility-block:hover{transform:translateY(-7px);border-color:rgba(245,144,20,.62);box-shadow:0 28px 80px rgba(0,0,0,.30),0 0 34px rgba(245,144,20,.12)}
+.facility-block.highlight,.facility-block.full{grid-column:1/-1;background:radial-gradient(circle at 84% 12%,rgba(245,144,20,.22),transparent 30%),rgba(16,35,58,.82);border-color:rgba(245,144,20,.35)}
+.facility-block h3{font-family:var(--font-display);font-size:26px;line-height:1.08;letter-spacing:-.045em;margin-bottom:14px}
+.facility-block p{color:var(--muted);font-size:16px;line-height:1.72;margin-bottom:16px}
+.facility-block strong{color:#fff}
+.facility-checklist{list-style:none;display:grid;gap:10px}
+.facility-checklist li{display:flex;align-items:flex-start;gap:11px;color:#d7e4f4;font-size:15px;line-height:1.55}
+.facility-ck{width:20px;height:20px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:2px;box-shadow:0 0 14px rgba(245,144,20,.55)}
+.facility-ck svg{width:11px;height:11px;stroke:#07111f;stroke-width:4;fill:none}
+.facility-cta{margin-top:34px;padding:34px;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.22),transparent 32%),linear-gradient(135deg,var(--accent),#c46c08);color:#07111f;border-radius:24px;display:flex;align-items:center;justify-content:space-between;gap:22px;box-shadow:0 28px 80px rgba(245,144,20,.18)}
+.facility-cta p{font-family:var(--font-display);font-size:clamp(26px,3vw,42px);font-weight:900;line-height:1;letter-spacing:-.055em;margin:0}
+.facility-cta p span{display:block;font-family:var(--font-body);font-size:15px;font-weight:700;letter-spacing:0;line-height:1.5;margin-top:10px;color:rgba(7,17,31,.76)}
+.facility-cta .btn{background:#07111f;color:#fff;min-width:180px}
+@media(max-width:980px){.facility-hero-grid,.facility-grid{grid-template-columns:1fr}.facility-media{min-height:320px}.facility-cta{flex-direction:column;align-items:flex-start}}
+@media(max-width:780px){.facility-hero{padding:54px 0 34px}.facility-copy{padding:28px}.facility-copy h1{font-size:clamp(42px,14vw,62px)!important}.facility-media{min-height:250px;border-radius:24px}.facility-content{padding-bottom:66px}.facility-block{padding:24px}.facility-block.highlight,.facility-block.full{grid-column:auto}.facility-cta{border-radius:22px!important;padding:28px!important}}
+</style>
 <body>
+
 
   <div class="topbar">
     <div class="container">
@@ -1951,7 +2060,7 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
       <a href="chi-siamo.html">Chi siamo</a>
       <a href="servizi.html">Servizi</a>
       <a href="index.html#soluzioni">Soluzioni</a>
-      <a href="index.html#contatti">Contatti</a>
+      <a href="contatti.html">Contatti</a>
     </aside>
     <div class="gama-mega-main">
       <div class="gama-mega-cols">
@@ -1983,91 +2092,100 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
   </div>
 </div>
 
+
 <main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">Gestione</div>
-        <h1>Facility Management</h1>
-        <p>Offriamo servizi integrati per mantenere ambienti professionali efficienti, ordinati e funzionali.</p>
-        <a class="btn btn-primary" href="servizi.html">Indietro ai servizi</a>
-      </div>
+<section class="facility-hero">
+<div class="container facility-hero-grid">
+<div class="facility-media"><img src="assets/img-07-cea2c2452fe9.webp" alt="Facility Management GaMa Service"></div>
+<div class="facility-copy">
+<a href="servizi.html" class="facility-back">← Indietro ai servizi</a>
+<div class="eyebrow">Gestione spazi</div>
+<h1>Facility Management</h1>
+<p><strong>GaMa Service</strong> offre servizi integrati di <strong>facility management</strong> per aziende, enti, attività commerciali e spazi privati: gestione operativa, cura degli ambienti e supporto quotidiano con standard professionali.</p>
+</div>
+</div>
+</section>
 
-      <aside class="hero-panel">
-        <div class="hero-panel-content">
-          <strong>Facility Management</strong>
-          <span>Arredamento, facchinaggio, giardinaggio, pulizie e gestione completa degli spazi aziendali.</span>
-        </div>
-      </aside>
-    </div>
-  </section>
+<section class="facility-content">
+<div class="container">
+<div class="facility-grid">
 
-  <section class="services-section">
-    <div class="container detail-grid">
-      <div class="detail-media">
-        <img src="assets/img-07-cea2c2452fe9.webp" alt="Facility Management">
-      </div>
-      <div class="detail-content">
-        <div class="eyebrow">Dettaglio servizio</div>
-        <h2>Facility Management</h2>
-        <p>Offriamo servizi integrati per mantenere ambienti professionali efficienti, ordinati e funzionali.</p>
-      </div>
-    </div>
-  </section>
+<article class="facility-block">
+<h3>🧹 Pulizie Civili e Industriali</h3>
+<p>Servizi di pulizia professionale per uffici, condomini, attività commerciali, ambienti produttivi e spazi comuni.</p>
+<ul class="facility-checklist">
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie ordinarie e periodiche</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sanificazione ambienti e superfici</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie post cantiere e post ristrutturazione</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione materiali e prodotti professionali</li>
+</ul>
+</article>
 
-  <section class="content">
-    <div class="container">
-      <div class="sections-grid">
-        
-          <div class="section-block">
-            <h3><span class="emoji">🪑</span> Arredamento</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto agli spazi</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Allestimenti operativi</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione arredi</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni su misura</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">📦</span> Facchinaggio</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Movimentazione interna</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto logistico</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Traslochi operativi</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Servizi programmati</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🌿</span> Giardinaggio</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Cura del verde</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Manutenzione aree esterne</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi periodici</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Decoro degli spazi</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🧼</span> Pulizie</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie ordinarie</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie straordinarie</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ambienti professionali</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Continuità del servizio</li>
-            </ul>
-          </div>
-        
-      </div>
+<article class="facility-block">
+<h3>🚚 Facchinaggio e Movimentazioni</h3>
+<p>Supporto operativo per spostamenti, movimentazione merci, allestimenti, sgomberi e attività logistiche leggere.</p>
+<ul class="facility-checklist">
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Movimentazione interna di materiali e arredi</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto per traslochi e riorganizzazioni</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sgomberi e gestione aree operative</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Personale organizzato e coordinato</li>
+</ul>
+</article>
 
-      <div class="cta-bar" id="contatti">
-        <p>Hai bisogno di un preventivo?<span>Contattaci per una consulenza gratuita e senza impegno.</span></p>
-        <a href="tel:+390396776853" class="cta-btn">Contattaci</a>
-      </div>
-    </div>
-  </section>
+<article class="facility-block">
+<h3>🌿 Giardinaggio e Aree Verdi</h3>
+<p>Cura e manutenzione di spazi esterni, aree verdi, giardini aziendali e condominiali.</p>
+<ul class="facility-checklist">
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Taglio erba e manutenzione periodica</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Potature e cura del verde</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizia aree esterne</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione programmata degli interventi</li>
+</ul>
+</article>
+
+<article class="facility-block">
+<h3>🪑 Arredamento e Allestimenti</h3>
+<p>Supporto per organizzazione, montaggio, posizionamento e gestione di arredi in uffici, attività e ambienti operativi.</p>
+<ul class="facility-checklist">
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Montaggio e sistemazione arredi</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Allestimento spazi aziendali</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ottimizzazione ambienti di lavoro</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi rapidi e coordinati</li>
+</ul>
+</article>
+
+<article class="facility-block full">
+<h3>🏢 Gestione Integrata degli Spazi</h3>
+<p>Un unico referente per coordinare servizi quotidiani, interventi programmati e necessità operative. L’obiettivo è mantenere ambienti ordinati, funzionali e sempre pronti all’uso.</p>
+<ul class="facility-checklist">
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pianificazione delle attività</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Controllo qualità del servizio</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi ordinari e su richiesta</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni per aziende, privati e strutture commerciali</li>
+</ul>
+</article>
+
+<article class="facility-block highlight">
+<h3>⭐ Perché scegliere GaMa Service?</h3>
+<p>Un partner affidabile per gestire ambienti, servizi e attività operative con puntualità, controllo e qualità esecutiva.</p>
+<ul class="facility-checklist">
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Un solo interlocutore per più servizi</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Organizzazione chiara e flessibile</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Personale qualificato</li>
+<li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto continuativo</li>
+</ul>
+</article>
+
+</div>
+
+<div class="facility-cta">
+<p>Vuoi organizzare i tuoi spazi?<span>Contattaci per una consulenza gratuita e senza impegno.</span></p>
+<a class="btn" href="tel:+390396776853">Contattaci</a>
+</div>
+</div>
+</section>
 </main>
+
 
 
   <footer>
@@ -2094,7 +2212,7 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
           <li><a href="chi-siamo.html">Chi siamo</a></li>
           <li><a href="servizi.html">Servizi</a></li>
           <li><a href="index.html#soluzioni">Soluzioni</a></li>
-          <li><a href="index.html#contatti">Contatti</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
         </ul>
       </div>
 
@@ -2136,5 +2254,26 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
     setInterval(updateDateTime, 1000);
   </script>
 <script>(function(){const toggle=document.querySelector('.gama-menu-toggle');const panel=document.getElementById('gamaMegaMenu');if(!toggle||!panel)return;function setMenu(open){document.body.classList.toggle('gama-menu-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');panel.setAttribute('aria-hidden',open?'false':'true')}setMenu(false);toggle.addEventListener('click',function(){setMenu(!document.body.classList.contains('gama-menu-open'))});document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});panel.addEventListener('click',function(e){if(e.target===panel)setMenu(false)});panel.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false)})})})();</script>
+
+<script>
+(function () {
+  const logos = document.querySelectorAll('.nav > .brand');
+  logos.forEach(function (logo) {
+    logo.addEventListener('mousemove', function (event) {
+      const rect = logo.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      logo.style.setProperty('--logo-x', x + '%');
+      logo.style.setProperty('--logo-y', y + '%');
+    });
+
+    logo.addEventListener('mouseleave', function () {
+      logo.style.setProperty('--logo-x', '50%');
+      logo.style.setProperty('--logo-y', '50%');
+    });
+  });
+})();
+</script>
+
 </body>
 </html>

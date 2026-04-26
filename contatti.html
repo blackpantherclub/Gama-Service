@@ -2883,7 +2883,291 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
 
 </style>
 </head>
+
+<style>
+/* ===== PAGINA CONTATTI - STILE HOME ===== */
+.contatti-hero {
+  padding: 92px 0 44px;
+}
+
+.contatti-head {
+  max-width: 920px;
+  margin-bottom: 34px;
+}
+
+.contatti-head h1 {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: .9;
+  letter-spacing: -.078em;
+  margin-bottom: 22px;
+}
+
+.contatti-head p {
+  color: #d7e4f4;
+  font-size: 18px;
+  line-height: 1.75;
+  max-width: 760px;
+}
+
+.contatti-head a {
+  color: var(--accent-2);
+  font-weight: 900;
+}
+
+.contatti-grid {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 28px;
+  align-items: start;
+  padding-bottom: 100px;
+}
+
+.contatti-card,
+.info-panel {
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(245,144,20,.13), transparent 32%),
+    linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.028)),
+    rgba(16,35,58,.68);
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 28px 80px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.contatti-card {
+  padding: clamp(26px, 4vw, 42px);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: #fff;
+  padding: 15px 16px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 14px;
+  background: rgba(5,10,18,.48);
+  outline: none;
+  transition: border-color .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgba(245,144,20,.76);
+  box-shadow: 0 0 0 4px rgba(245,144,20,.12), 0 0 26px rgba(245,144,20,.10);
+  background: rgba(5,10,18,.70);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(215,228,244,.45);
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn-invia {
+  min-height: 52px;
+  padding: 0 34px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #07111f;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  box-shadow: 0 18px 42px rgba(245,144,20,.20);
+}
+
+.btn-invia:hover {
+  transform: translateY(-2px);
+  background: var(--accent-2);
+  box-shadow: 0 24px 60px rgba(245,144,20,.28);
+}
+
+.info-panel {
+  padding: 20px;
+}
+
+.map-container {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.13);
+  aspect-ratio: 4 / 3;
+  margin-bottom: 18px;
+  box-shadow: 0 18px 54px rgba(0,0,0,.22);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  filter: saturate(.92) contrast(1.04);
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.info-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.11);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: transform .22s ease, border-color .22s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245,144,20,.48);
+}
+
+.info-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: rgba(245,144,20,.13);
+  border: 1px solid rgba(245,144,20,.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.info-card-icon svg {
+  width: 21px;
+  height: 21px;
+  stroke: var(--accent-2);
+  stroke-width: 2;
+  fill: none;
+}
+
+.info-card-text strong {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 4px;
+}
+
+.info-card-text,
+.info-card-text span,
+.info-card-text a {
+  color: #d7e4f4;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info-card-text a:hover {
+  color: var(--accent-2);
+}
+
+.contatti-cta {
+  margin-top: 26px;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.20), transparent 34%),
+    linear-gradient(135deg, var(--accent), #c46c08);
+  color: #07111f;
+  border-radius: 24px;
+}
+
+.contatti-cta strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -.055em;
+  margin-bottom: 10px;
+}
+
+.contatti-cta span {
+  display: block;
+  color: rgba(7,17,31,.76);
+  font-weight: 800;
+}
+
+@media (max-width: 980px) {
+  .contatti-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-panel {
+    order: -1;
+  }
+}
+
+@media (max-width: 780px) {
+  .contatti-hero {
+    padding: 54px 0 28px;
+  }
+
+  .contatti-head h1 {
+    font-size: clamp(42px, 14vw, 64px) !important;
+  }
+
+  .contatti-grid {
+    padding-bottom: 66px;
+  }
+
+  .form-row,
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contatti-card,
+  .info-panel {
+    border-radius: 24px;
+  }
+
+  .map-container {
+    aspect-ratio: 1 / .85;
+  }
+}
+</style>
 <body>
+
   <div class="topbar">
     <div class="container">
       <span>Operativi · Sovico (MB) · Lombardia</span>
@@ -3327,5 +3611,208 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
 })();
 </script>
 
+</body>
+</html>
+
+<main>
+  <section class="contatti-hero">
+    <div class="container">
+      <div class="contatti-head">
+        <div class="eyebrow">Contatti</div>
+        <h1>Dicci di cosa hai bisogno.</h1>
+        <p>Usa il modulo di contatto oppure chiamaci al numero <a href="tel:+390396776853">+39 039 677 6853</a>. Ti risponderemo il prima possibile con un supporto chiaro e operativo.</p>
+      </div>
+
+      <div class="contatti-grid">
+        <div class="contatti-card">
+          <form action="https://formsubmit.co/info@gama-service.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuova richiesta dal sito GaMa Service">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="Nome" placeholder="Il tuo nome" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="La tua email" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Telefono</label>
+              <input type="tel" id="telefono" name="Telefono" placeholder="Il tuo numero di telefono">
+            </div>
+
+            <div class="form-group">
+              <label for="oggetto">Oggetto</label>
+              <select id="oggetto" name="Oggetto" required>
+                <option value="" disabled selected>Scegli un'opzione</option>
+                <option value="Impiantistica">Impiantistica</option>
+                <option value="Nuova costruzione">Nuova costruzione</option>
+                <option value="Ristrutturazione">Ristrutturazione</option>
+                <option value="Facility Management">Facility Management</option>
+                <option value="Altro">Altro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="messaggio">Descrizione richiesta</label>
+              <textarea id="messaggio" name="Messaggio" placeholder="Descrivi brevemente la tua richiesta..." required></textarea>
+            </div>
+
+            <button class="btn-invia" type="submit">Invia richiesta</button>
+          </form>
+        </div>
+
+        <aside class="info-panel">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d693.8!2d9.2605403!3d45.6461907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786bbaa540a5959%3A0x5f62a5fb9e5919f8!2sGaMa%20Service%20Srl!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="info-card-text">
+                <strong>Indirizzo</strong>
+                <span>Viale Monza, 69<br>Sovico 20845 (MB)</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="info-card-text">
+                <strong>Telefono</strong>
+                <a href="tel:+390396776853">+39 039 677 6853</a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="info-card-text">
+                <strong>Email</strong>
+                <a href="mailto:info@gama-service.com">info@gama-service.com</a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="info-card-text">
+                <strong>Orari</strong>
+                <span>Lun – Ven: 8:30 – 18:30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contatti-cta">
+            <strong>Parliamone ora.</strong>
+            <span>Un referente ti aiuterà a capire tempi, intervento e soluzione migliore.</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:18px"><span>GaMa Service <small>S.R.L.</small></span>
+        </div>
+        <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p>
+        <p style="margin-top:14px">P.IVA 12048300961</p>
+      </div>
+
+      <div>
+        <h4>Servizi</h4>
+        <ul>
+          <li>Impianti meccanici</li>
+          <li>Impianti elettrici</li>
+          <li>Impianti speciali</li>
+          <li>Edilizia</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Azienda</h4>
+        <ul>
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#soluzioni">Soluzioni</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="tel:+390396776853">+39 039 677 6853</a></li>
+          <li><a href="mailto:info@gama-service.com">info@gama-service.com</a></li>
+          <li>Lun - Ven · 08:30 - 18:30</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© GaMa Service S.R.L. Tutti i diritti riservati.</span>
+      
+    </div>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+
+      const date = now.toLocaleDateString('it-IT', {
+        weekday: 'long',
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric'
+      });
+
+      const time = now.toLocaleTimeString('it-IT', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      });
+
+      const datetime = document.getElementById('datetime');
+      if (!datetime) return;
+
+      datetime.textContent = date + ' · ' + time;
+}
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+
+  <script>
+    document.querySelectorAll('.card').forEach((card) => {
+      card.addEventListener('pointermove', (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width) * 100;
+        const y = ((event.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty('--mx', x + '%');
+        card.style.setProperty('--my', y + '%');
+      });
+    });
+  </script>
+<script>(function(){const toggle=document.querySelector('.gama-menu-toggle');const panel=document.getElementById('gamaMegaMenu');if(!toggle||!panel)return;function setMenu(open){document.body.classList.toggle('gama-menu-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');panel.setAttribute('aria-hidden',open?'false':'true')}setMenu(false);toggle.addEventListener('click',function(){setMenu(!document.body.classList.contains('gama-menu-open'))});document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});panel.addEventListener('click',function(e){if(e.target===panel)setMenu(false)});panel.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false)})})})();</script>
 </body>
 </html>
