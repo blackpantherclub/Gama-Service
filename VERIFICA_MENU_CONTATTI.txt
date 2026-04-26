@@ -1,0 +1,82 @@
+{
+  "chi-siamo.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "contatti.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "edilizia.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "facility-management.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "impianti-elettrici.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "impianti-speciali.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "index.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "manutenzione.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  },
+  "servizi.html": {
+    "has_contatti_html_link": true,
+    "old_contatti_links": 0,
+    "menu_label_count": 2,
+    "toggle_count": 1,
+    "mega_count": 1,
+    "contatti_file_exists": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "chi-siamo.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "contatti.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "edilizia.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "facility-management.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "impianti-elettrici.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "impianti-speciali.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "index.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 0
+  },
+  "manutenzione.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  },
+  "servizi.html": {
+    "toggle_count": 1,
+    "label_count": 1,
+    "mega_count": 1,
+    "contatti_link": true,
+    "old_contatti_link_count": 0,
+    "bad_elettrico_hero": false,
+    "main_count": 1
+  }
+}
