@@ -1922,9 +1922,319 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
   }
 }
 
+
+/* ===== PAGINA IMPIANTI SPECIALI - STILE HOME ===== */
+.special-hero {
+  padding: 92px 0 54px;
+}
+
+.special-hero-grid {
+  display: grid;
+  grid-template-columns: .92fr 1.08fr;
+  gap: 38px;
+  align-items: stretch;
+}
+
+.special-media {
+  min-height: 460px;
+  border-radius: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 28px 80px rgba(0,0,0,.30);
+  position: relative;
+}
+
+.special-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 42%, rgba(7,17,31,.82) 100%),
+    radial-gradient(circle at 82% 12%, rgba(245,144,20,.28), transparent 28%);
+}
+
+.special-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.88) saturate(1.12);
+}
+
+.special-copy {
+  border-radius: 34px;
+  padding: clamp(34px, 5vw, 60px);
+  background:
+    radial-gradient(circle at 84% 18%, rgba(245,144,20,.16), transparent 32%),
+    linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.028)),
+    rgba(16,35,58,.66);
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 28px 80px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.special-copy h1 {
+  font-family: var(--font-display);
+  font-size: clamp(46px, 6vw, 86px);
+  line-height: .92;
+  letter-spacing: -.075em;
+  margin-bottom: 24px;
+}
+
+.special-copy p {
+  color: #d7e4f4;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 760px;
+}
+
+.special-copy strong {
+  color: #fff;
+}
+
+.special-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-2);
+  font-weight: 900;
+  margin-bottom: 22px;
+  width: fit-content;
+}
+
+.special-back svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.special-content {
+  padding: 34px 0 100px;
+}
+
+.special-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.special-block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 30px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.022)),
+    rgba(16,35,58,.72);
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 18px 54px rgba(0,0,0,.20), inset 0 1px 0 rgba(255,255,255,.05);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.special-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 84% 12%, rgba(245,144,20,.16), transparent 30%);
+  opacity: 0;
+  transition: opacity .25s ease;
+  pointer-events: none;
+}
+
+.special-block:hover {
+  transform: translateY(-7px);
+  border-color: rgba(245,144,20,.62);
+  box-shadow: 0 28px 80px rgba(0,0,0,.30), 0 0 34px rgba(245,144,20,.12);
+}
+
+.special-block:hover::before {
+  opacity: 1;
+}
+
+.special-block.highlight {
+  grid-column: 1 / -1;
+  background:
+    radial-gradient(circle at 84% 12%, rgba(245,144,20,.22), transparent 30%),
+    rgba(16,35,58,.82);
+  border-color: rgba(245,144,20,.35);
+}
+
+.special-block > * {
+  position: relative;
+  z-index: 2;
+}
+
+.special-block h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.special-emoji {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: rgba(245,144,20,.12);
+  border: 1px solid rgba(245,144,20,.24);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex: 0 0 auto;
+}
+
+.special-block p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.72;
+  margin-bottom: 16px;
+}
+
+.special-block strong {
+  color: #fff;
+}
+
+.special-checklist {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.special-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  color: #d7e4f4;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.special-ck {
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  box-shadow: 0 0 14px rgba(245,144,20,.55);
+}
+
+.special-ck svg {
+  width: 11px;
+  height: 11px;
+  stroke: #07111f;
+  stroke-width: 4;
+  fill: none;
+}
+
+.special-cta {
+  margin-top: 34px;
+  padding: 34px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.22), transparent 32%),
+    linear-gradient(135deg, var(--accent), #c46c08);
+  color: #07111f;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  box-shadow: 0 28px 80px rgba(245,144,20,.18);
+}
+
+.special-cta p {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.055em;
+  margin: 0;
+}
+
+.special-cta p span {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: rgba(7,17,31,.76);
+}
+
+.special-cta .btn {
+  background: #07111f;
+  color: #fff;
+  min-width: 180px;
+}
+
+@media (max-width: 980px) {
+  .special-hero-grid,
+  .special-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .special-media {
+    min-height: 320px;
+  }
+
+  .special-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 780px) {
+  .special-hero {
+    padding: 54px 0 34px;
+  }
+
+  .special-copy {
+    padding: 28px;
+  }
+
+  .special-copy h1 {
+    font-size: clamp(42px, 14vw, 62px) !important;
+  }
+
+  .special-media {
+    min-height: 250px;
+    border-radius: 24px;
+  }
+
+  .special-content {
+    padding-bottom: 66px;
+  }
+
+  .special-block {
+    padding: 24px;
+  }
+
+  .special-block.highlight {
+    grid-column: auto;
+  }
+
+  .special-cta {
+    border-radius: 22px !important;
+    padding: 28px !important;
+  }
+}
+
 </style>
 </head>
 <body>
+
 
   <div class="topbar">
     <div class="container">
@@ -1983,91 +2293,104 @@ body.gama-menu-open{overflow:hidden}.service-card,.card,.detail-content,.hero-pa
   </div>
 </div>
 
+
 <main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
+  <section class="special-hero">
+    <div class="container special-hero-grid">
+      <div class="special-media">
+        <img src="assets/img-05-b0d297e2d25d.webp" alt="Impianti speciali GaMa Service">
+      </div>
+
+      <div class="special-copy">
+        <a href="servizi.html" class="special-back">
+          <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Indietro ai servizi
+        </a>
+
         <div class="eyebrow">Tecnologia</div>
         <h1>Impianti Speciali</h1>
-        <p>Progettiamo infrastrutture tecnologiche per edifici moderni, integrando sicurezza, dati, controllo e automazione.</p>
-        <a class="btn btn-primary" href="servizi.html">Indietro ai servizi</a>
-      </div>
-
-      <aside class="hero-panel">
-        <div class="hero-panel-content">
-          <strong>Impianti Speciali</strong>
-          <span>Reti dati, data center, videosorveglianza, controllo accessi e building automation per edifici intelligenti.</span>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="services-section">
-    <div class="container detail-grid">
-      <div class="detail-media">
-        <img src="assets/img-05-b0d297e2d25d.webp" alt="Impianti Speciali">
-      </div>
-      <div class="detail-content">
-        <div class="eyebrow">Dettaglio servizio</div>
-        <h2>Impianti Speciali</h2>
-        <p>Progettiamo infrastrutture tecnologiche per edifici moderni, integrando sicurezza, dati, controllo e automazione.</p>
+        <p>Progettiamo e realizziamo <strong>infrastrutture di rete dati</strong>, <strong>data center</strong>, sistemi di <strong>videosorveglianza</strong>, <strong>controllo accessi</strong> e <strong>building automation</strong> ad alte prestazioni per aziende, enti pubblici e strutture commerciali.</p>
       </div>
     </div>
   </section>
 
-  <section class="content">
+  <section class="special-content">
     <div class="container">
-      <div class="sections-grid">
-        
-          <div class="section-block">
-            <h3><span class="emoji">🌐</span> Reti dati</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Cablaggio strutturato</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Infrastrutture IT</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Connettività aziendale</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni scalabili</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🖥️</span> Data center</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ambienti tecnici</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Distribuzione e controllo</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Continuità operativa</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto impiantistico</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🎥</span> Videosorveglianza</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sistemi di controllo</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Telecamere e monitoraggio</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sicurezza perimetrale</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione accessi</li>
-            </ul>
-          </div>
-        
-          <div class="section-block">
-            <h3><span class="emoji">🏢</span> Building automation</h3>
-            <ul class="checklist">
-              <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Edifici intelligenti</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Controllo centralizzato</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Efficienza energetica</li>
-<li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Integrazione sistemi</li>
-            </ul>
-          </div>
-        
+      <div class="special-grid">
+
+        <article class="special-block">
+          <h3><span class="special-emoji">🖥️</span> Infrastrutture di Rete Dati e Data Center</h3>
+          <p>Dalla progettazione del <strong>cablaggio strutturato in rame e fibra ottica</strong> alla configurazione di switch, router e firewall, garantiamo una <strong>connettività stabile, sicura e scalabile</strong>.</p>
+          <ul class="special-checklist">
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Allestimento completo di <strong>sale server</strong> e rack</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sistemi di raffreddamento e <strong>gruppi di continuità UPS</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni di <strong>disaster recovery</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Massima operatività e <strong>protezione dei dati aziendali</strong></li>
+          </ul>
+        </article>
+
+        <article class="special-block">
+          <h3><span class="special-emoji">📡</span> Reti Dati Wireless</h3>
+          <p>Installiamo e configuriamo <strong>reti dati wireless professionali</strong> per una <strong>copertura Wi-Fi efficiente e capillare</strong> in ambienti di qualsiasi dimensione.</p>
+          <ul class="special-checklist">
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Access point di ultima generazione</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione centralizzata della rete</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Autenticazione sicura</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ottimizzazione della larghezza di banda</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Prestazioni elevate in ambienti ad <strong>alta densità di utenti</strong></li>
+          </ul>
+        </article>
+
+        <article class="special-block">
+          <h3><span class="special-emoji">📹</span> Videosorveglianza e Analisi Video</h3>
+          <p>Progettazione e installazione di <strong>sistemi di videosorveglianza TVCC</strong> analogici, digitali e <strong>IP ad alta definizione</strong>.</p>
+          <ul class="special-checklist">
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Telecamere dome, bullet e PTZ</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Videoregistratori <strong>NVR e DVR</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Software di <strong>analisi video intelligente</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Riconoscimento targhe e rilevamento intrusioni</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Monitoraggio da remoto</strong> tramite app e cloud</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Conformità alle <strong>normative GDPR</strong></li>
+          </ul>
+        </article>
+
+        <article class="special-block">
+          <h3><span class="special-emoji">🔐</span> Controllo Accessi</h3>
+          <p>Soluzioni avanzate di <strong>controllo accessi</strong> per una gestione sicura e tracciabile degli ingressi in edifici, aree riservate e parcheggi.</p>
+          <ul class="special-checklist">
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Lettori di badge e tessere RFID</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Tastierini numerici</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Riconoscimento biometrico: <strong>impronta digitale e facciale</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Tornelli e varchi motorizzati</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Integrazione con videosorveglianza e antintrusione</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Sicurezza perimetrale completa</strong> e gestione da remoto</li>
+          </ul>
+        </article>
+
+        <article class="special-block highlight">
+          <h3><span class="special-emoji">🏢</span> Building Automation</h3>
+          <p>Servizi completi di <strong>building automation</strong> per automatizzare, monitorare e ottimizzare tutti i sistemi impiantistici dell'edificio. Integrazione di <strong>protocolli BACnet, KNX e Modbus</strong>.</p>
+          <ul class="special-checklist">
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione centralizzata di illuminazione, climatizzazione e riscaldamento</li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni di <strong>domotica e smart building</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Controllo da remoto tramite app e dashboard</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Miglioramento del <strong>comfort abitativo</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Riduzione dei <strong>consumi energetici</strong></li>
+            <li><span class="special-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Contributo alla <strong>certificazione energetica</strong> degli edifici</li>
+          </ul>
+          <p>Ideale per uffici, strutture ricettive, edifici residenziali e complessi industriali.</p>
+        </article>
+
       </div>
 
-      <div class="cta-bar" id="contatti">
+      <div class="special-cta" id="contatti">
         <p>Hai bisogno di un preventivo?<span>Contattaci per una consulenza gratuita e senza impegno.</span></p>
-        <a href="tel:+390396776853" class="cta-btn">Contattaci</a>
+        <a class="btn" href="tel:+390396776853">Contattaci</a>
       </div>
     </div>
   </section>
 </main>
+
 
 
   <footer>
