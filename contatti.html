@@ -244,10 +244,84 @@ footer a:hover,
   text-shadow: 0 0 14px rgba(255,59,59,.25);
 }
 
+
+/* FOOTER DEFINITIVO: TUTTE LE VOCI CLICCABILI */
+footer a {
+  display: block !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: color .2s ease, transform .2s ease, text-shadow .2s ease !important;
+  margin: 0 0 14px !important;
+}
+
+footer a:hover {
+  color: #ff3b3b !important;
+  transform: translateX(4px);
+  text-shadow: 0 0 14px rgba(255,59,59,.25);
+}
+
+footer p {
+  pointer-events: auto !important;
+}
+
+
+/* MOBILE CALL ICON */
+.mobile-call{
+  display:none;
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  align-items:center;
+  justify-content:center;
+  background:rgba(245,144,20,.15);
+  border:1px solid rgba(245,144,20,.3);
+  font-size:22px;
+  color:#f59014;
+  text-decoration:none;
+  transition:.25s;
+}
+.mobile-call:hover{
+  background:rgba(245,144,20,.25);
+  transform:scale(1.08);
+  box-shadow:0 0 20px rgba(245,144,20,.4);
+}
+@media(max-width:780px){
+  .mobile-call{display:flex;}
+  .btn-primary{display:none!important;}
+}
+
 </style>
 <style>
 /* ===== CONTATTI CLEAN: NIENTE HOME SOTTO ===== */
 .contatti-hero{padding:92px 0 44px}.contatti-head{max-width:920px;margin-bottom:34px}.contatti-head h1{font-family:var(--font-display);font-size:clamp(48px,7vw,96px);line-height:.9;letter-spacing:-.078em;margin-bottom:22px}.contatti-head p{color:#d7e4f4;font-size:18px;line-height:1.75;max-width:760px}.contatti-head a{color:var(--accent-2);font-weight:900}.contatti-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:start;padding-bottom:100px}.contatti-card,.info-panel{border-radius:32px;background:radial-gradient(circle at 88% 12%,rgba(245,144,20,.13),transparent 32%),linear-gradient(180deg,rgba(255,255,255,.065),rgba(255,255,255,.028)),rgba(16,35,58,.68);border:1px solid rgba(255,255,255,.13);box-shadow:0 28px 80px rgba(0,0,0,.30),inset 0 1px 0 rgba(255,255,255,.06)}.contatti-card{padding:clamp(26px,4vw,42px)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-group{display:grid;gap:8px;margin-bottom:18px}.form-group label{color:#fff;font-size:13px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.form-group input,.form-group select,.form-group textarea{width:100%;font-family:var(--font-body);font-size:15px;color:#fff;padding:15px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(5,10,18,.48);outline:none;transition:.22s}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(245,144,20,.76);box-shadow:0 0 0 4px rgba(245,144,20,.12),0 0 26px rgba(245,144,20,.10);background:rgba(5,10,18,.70)}.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(215,228,244,.45)}.form-group textarea{resize:vertical;min-height:150px}.btn-invia{min-height:52px;padding:0 34px;border:0;border-radius:999px;background:var(--accent);color:#07111f;font-family:var(--font-body);font-size:14px;font-weight:1000;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;transition:.2s;box-shadow:0 18px 42px rgba(245,144,20,.20)}.btn-invia:hover{transform:translateY(-2px);background:var(--accent-2);box-shadow:0 24px 60px rgba(245,144,20,.28)}.info-panel{padding:20px}.map-container{border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.13);aspect-ratio:4/3;margin-bottom:18px;box-shadow:0 18px 54px rgba(0,0,0,.22)}.map-container iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.92) contrast(1.04)}.info-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.info-card{padding:20px;border-radius:20px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);display:flex;gap:14px;align-items:flex-start;transition:.22s}.info-card:hover{transform:translateY(-4px);border-color:rgba(245,144,20,.48)}.info-card-icon{width:42px;height:42px;border-radius:14px;background:rgba(245,144,20,.13);border:1px solid rgba(245,144,20,.24);display:flex;align-items:center;justify-content:center;flex:0 0 auto}.info-card-icon svg{width:21px;height:21px;stroke:var(--accent-2);stroke-width:2;fill:none}.info-card-text strong{display:block;color:#fff;font-size:12px;font-weight:1000;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}.info-card-text,.info-card-text span,.info-card-text a{color:#d7e4f4;font-size:14px;line-height:1.5}.info-card-text a:hover{color:var(--accent-2)}.contatti-cta{margin-top:26px;padding:28px;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.20),transparent 34%),linear-gradient(135deg,var(--accent),#c46c08);color:#07111f;border-radius:24px}.contatti-cta strong{display:block;font-family:var(--font-display);font-size:32px;line-height:1;letter-spacing:-.055em;margin-bottom:10px}.contatti-cta span{display:block;color:rgba(7,17,31,.76);font-weight:800}@media(max-width:980px){.contatti-grid{grid-template-columns:1fr}.info-panel{order:-1}}@media(max-width:780px){.contatti-hero{padding:54px 0 28px}.contatti-head h1{font-size:clamp(42px,14vw,64px)!important}.contatti-grid{padding-bottom:66px}.form-row,.info-cards{grid-template-columns:1fr}.contatti-card,.info-panel{border-radius:24px}.map-container{aspect-ratio:1/.85}}
+
+/* MOBILE CALL ICON */
+.mobile-call{
+  display:none;
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  align-items:center;
+  justify-content:center;
+  background:rgba(245,144,20,.15);
+  border:1px solid rgba(245,144,20,.3);
+  font-size:22px;
+  color:#f59014;
+  text-decoration:none;
+  transition:.25s;
+}
+.mobile-call:hover{
+  background:rgba(245,144,20,.25);
+  transform:scale(1.08);
+  box-shadow:0 0 20px rgba(245,144,20,.4);
+}
+@media(max-width:780px){
+  .mobile-call{display:flex;}
+  .btn-primary{display:none!important;}
+}
+
 </style>
 
 <meta name="description" content="Contatta GaMa Service per consulenze, preventivi e informazioni su impianti, edilizia e facility management.">
@@ -324,8 +398,46 @@ footer a:hover,
 </div>
 </div>
 </section>
-</main><footer> <div class="container footer-grid"> <div> <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p> <p style="margin-top:14px">P.IVA 12048300961</p> </div> <div> <h4>Servizi</h4> <ul> <li><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a></li> <li><a href="impianti-elettrici.html">Impianti elettrici</a></li> <li><a href="impianti-speciali.html">Impianti speciali</a></li> <li><a href="edilizia.html">Edilizia</a></li> <li><a href="manutenzione.html">Manutenzione</a></li> </ul> </div> <div> <h4>Azienda</h4> <ul> <li><a href="chi-siamo.html">Chi siamo</a></li> <li><a href="servizi.html">Servizi</a></li> <li><a href="soluzioni.html">Soluzioni</a></li> <li><a href="contatti.html">Contatti</a></li> </ul> </div> <div> <h4>Contatti</h4> <ul> <li><a href="tel:+390396776853">+39 039 677 6853</a></li> <li><a href="mailto:info@gama-service.com">info@gama-service.com</a></li> <li>Lun - Ven · 08:30 - 18:30</li> </ul> </div> </div> <div class="container footer-bottom"> <span>© GaMa Service. Tutti i diritti riservati.</span> </div>
+</main>
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>GaMa Service</h3>
+      <strong>S.R.L.</strong>
+      <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p>
+      <p>P.IVA 12048300961</p>
+    </div>
+
+    <div>
+      <h4>Servizi</h4>
+      <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a>
+      <a href="impianti-elettrici.html">Impianti elettrici</a>
+      <a href="impianti-speciali.html">Impianti speciali</a>
+      <a href="edilizia.html">Edilizia</a>
+      <a href="facility-management.html">Facility Management</a>
+    </div>
+
+    <div>
+      <h4>Azienda</h4>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="soluzioni.html">Soluzioni</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+
+    <div>
+      <h4>Contatti</h4>
+      <a href="tel:+390396776853">+39 039 677 6853</a>
+      <a href="mailto:info@gama-service.com">info@gama-service.com</a>
+      <p>Lun - Ven · 08:30 - 18:30</p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© GaMa Service S.R.L. Tutti i diritti riservati.</p>
+  </div>
 </footer>
+
 <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "CollectionPage", "name": "Servizi — GaMa Service", "url": "https://www.gama-service.com/servizi.html", "description": "Panoramica dei servizi GaMa Service.", "inLanguage": "it-IT" } </script>
 <script> function updateDateTime() { const now = new Date(); const date = now.toLocaleDateString('it-IT', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }); const time = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); const datetime = document.getElementById('datetime'); if (!datetime) return; datetime.textContent = date + ' · ' + time; } updateDateTime(); setInterval(updateDateTime, 1000); </script>
 <script>(function(){const toggle=document.querySelector('.gama-menu-toggle');const panel=document.getElementById('gamaMegaMenu');if(!toggle||!panel)return;function setMenu(open){document.body.classList.toggle('gama-menu-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');panel.setAttribute('aria-hidden',open?'false':'true')}setMenu(false);toggle.addEventListener('click',function(){setMenu(!document.body.classList.contains('gama-menu-open'))});document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});panel.addEventListener('click',function(e){if(e.target===panel)setMenu(false)});panel.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false)})})})();</script>

@@ -244,6 +244,54 @@ footer a:hover,
   text-shadow: 0 0 14px rgba(255,59,59,.25);
 }
 
+
+/* FOOTER DEFINITIVO: TUTTE LE VOCI CLICCABILI */
+footer a {
+  display: block !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: color .2s ease, transform .2s ease, text-shadow .2s ease !important;
+  margin: 0 0 14px !important;
+}
+
+footer a:hover {
+  color: #ff3b3b !important;
+  transform: translateX(4px);
+  text-shadow: 0 0 14px rgba(255,59,59,.25);
+}
+
+footer p {
+  pointer-events: auto !important;
+}
+
+
+/* MOBILE CALL ICON */
+.mobile-call{
+  display:none;
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  align-items:center;
+  justify-content:center;
+  background:rgba(245,144,20,.15);
+  border:1px solid rgba(245,144,20,.3);
+  font-size:22px;
+  color:#f59014;
+  text-decoration:none;
+  transition:.25s;
+}
+.mobile-call:hover{
+  background:rgba(245,144,20,.25);
+  transform:scale(1.08);
+  box-shadow:0 0 20px rgba(245,144,20,.4);
+}
+@media(max-width:780px){
+  .mobile-call{display:flex;}
+  .btn-primary{display:none!important;}
+}
+
 </style>
 
 <style>
@@ -658,6 +706,32 @@ footer a:hover,
     padding: 28px;
   }
 }
+
+/* MOBILE CALL ICON */
+.mobile-call{
+  display:none;
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  align-items:center;
+  justify-content:center;
+  background:rgba(245,144,20,.15);
+  border:1px solid rgba(245,144,20,.3);
+  font-size:22px;
+  color:#f59014;
+  text-decoration:none;
+  transition:.25s;
+}
+.mobile-call:hover{
+  background:rgba(245,144,20,.25);
+  transform:scale(1.08);
+  box-shadow:0 0 20px rgba(245,144,20,.4);
+}
+@media(max-width:780px){
+  .mobile-call{display:flex;}
+  .btn-primary{display:none!important;}
+}
+
 </style>
 
 
@@ -848,8 +922,46 @@ footer a:hover,
     </div>
   </section>
 </main>
-<footer> <div class="container footer-grid"> <div> <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p> <p style="margin-top:14px">P.IVA 12048300961</p> </div> <div> <h4>Servizi</h4> <ul> <li><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a></li> <li><a href="impianti-elettrici.html">Impianti elettrici</a></li> <li><a href="impianti-speciali.html">Impianti speciali</a></li> <li><a href="edilizia.html">Edilizia</a></li> <li><a href="manutenzione.html">Manutenzione</a></li> </ul> </div> <div> <h4>Azienda</h4> <ul> <li><a href="chi-siamo.html">Chi siamo</a></li> <li><a href="servizi.html">Servizi</a></li> <li><a href="soluzioni.html">Soluzioni</a></li> <li><a href="contatti.html">Contatti</a></li> </ul> </div> <div> <h4>Contatti</h4> <ul> <li><a href="tel:+390396776853">+39 039 677 6853</a></li> <li><a href="mailto:info@gama-service.com">info@gama-service.com</a></li> <li>Lun - Ven · 08:30 - 18:30</li> </ul> </div> </div> <div class="container footer-bottom"> <span>© GaMa Service. Tutti i diritti riservati.</span> </div>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>GaMa Service</h3>
+      <strong>S.R.L.</strong>
+      <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p>
+      <p>P.IVA 12048300961</p>
+    </div>
+
+    <div>
+      <h4>Servizi</h4>
+      <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a>
+      <a href="impianti-elettrici.html">Impianti elettrici</a>
+      <a href="impianti-speciali.html">Impianti speciali</a>
+      <a href="edilizia.html">Edilizia</a>
+      <a href="facility-management.html">Facility Management</a>
+    </div>
+
+    <div>
+      <h4>Azienda</h4>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="soluzioni.html">Soluzioni</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+
+    <div>
+      <h4>Contatti</h4>
+      <a href="tel:+390396776853">+39 039 677 6853</a>
+      <a href="mailto:info@gama-service.com">info@gama-service.com</a>
+      <p>Lun - Ven · 08:30 - 18:30</p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© GaMa Service S.R.L. Tutti i diritti riservati.</p>
+  </div>
 </footer>
+
 <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "CollectionPage", "name": "Servizi — GaMa Service", "url": "https://www.gama-service.com/servizi.html", "description": "Panoramica dei servizi GaMa Service.", "inLanguage": "it-IT" } </script>
 <script> function updateDateTime() { const now = new Date(); const date = now.toLocaleDateString('it-IT', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }); const time = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); const datetime = document.getElementById('datetime'); if (!datetime) return; datetime.textContent = date + ' · ' + time; } updateDateTime(); setInterval(updateDateTime, 1000); </script>
 <script>(function(){const toggle=document.querySelector('.gama-menu-toggle');const panel=document.getElementById('gamaMegaMenu');if(!toggle||!panel)return;function setMenu(open){document.body.classList.toggle('gama-menu-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');panel.setAttribute('aria-hidden',open?'false':'true')}setMenu(false);toggle.addEventListener('click',function(){setMenu(!document.body.classList.contains('gama-menu-open'))});document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});panel.addEventListener('click',function(e){if(e.target===panel)setMenu(false)});panel.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false)})})})();</script>

@@ -1,0 +1,110 @@
+{
+  "chi-siamo.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "contatti.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "edilizia.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "facility-management.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "impianti-elettrici.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "impianti-speciali.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "index.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "manutenzione.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "servizi.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "sitemap.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  },
+  "soluzioni.html": {
+    "meccanici_anchor": true,
+    "elettrici_anchor": true,
+    "speciali_anchor": true,
+    "edilizia_anchor": true,
+    "facility_anchor": true,
+    "servizi_plain_text_left": true,
+    "footer_css": true
+  }
+}

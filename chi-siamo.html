@@ -244,6 +244,54 @@ footer a:hover,
   text-shadow: 0 0 14px rgba(255,59,59,.25);
 }
 
+
+/* FOOTER DEFINITIVO: TUTTE LE VOCI CLICCABILI */
+footer a {
+  display: block !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: color .2s ease, transform .2s ease, text-shadow .2s ease !important;
+  margin: 0 0 14px !important;
+}
+
+footer a:hover {
+  color: #ff3b3b !important;
+  transform: translateX(4px);
+  text-shadow: 0 0 14px rgba(255,59,59,.25);
+}
+
+footer p {
+  pointer-events: auto !important;
+}
+
+
+/* MOBILE CALL ICON */
+.mobile-call{
+  display:none;
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  align-items:center;
+  justify-content:center;
+  background:rgba(245,144,20,.15);
+  border:1px solid rgba(245,144,20,.3);
+  font-size:22px;
+  color:#f59014;
+  text-decoration:none;
+  transition:.25s;
+}
+.mobile-call:hover{
+  background:rgba(245,144,20,.25);
+  transform:scale(1.08);
+  box-shadow:0 0 20px rgba(245,144,20,.4);
+}
+@media(max-width:780px){
+  .mobile-call{display:flex;}
+  .btn-primary{display:none!important;}
+}
+
 </style>
 
 <meta name="description" content="Scopri GaMa Service: partner tecnico per impianti, edilizia, manutenzioni e facility management con approccio integrato e operativo.">
@@ -283,8 +331,46 @@ footer a:hover,
 <a href="index.html" class="brand" aria-label="GaMa Service home"> <img src="assets/img-01-1f57fc19aa46.gif" alt="GaMa Service logo" class="brand-logo"> <span>GaMa Service</span> </a>
 <a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a> </div> </header> <div class="gama-mega" id="gamaMegaMenu" aria-hidden="true"> <div class="gama-mega-layout"> <aside class="gama-mega-left"> <a class="active" href="index.html">Home</a> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Servizi</a> <a href="soluzioni.html">Soluzioni</a> <a href="contatti.html">Contatti</a> </aside> <div class="gama-mega-main"> <div class="gama-mega-cols"> <div class="gama-mega-col"> <h4>Impianti tecnici</h4> <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a> <a href="impianti-elettrici.html">Impianti elettrici</a> <a href="impianti-speciali.html">Impianti speciali</a> </div> <div class="gama-mega-col"> <h4>Edilizia</h4> <a href="edilizia.html">Edilizia</a> <div class="gama-mega-rule"></div> <h4>Facility Management</h4> <a href="facility-management.html">Facility Management</a> </div> <div class="gama-mega-col"> <h4>Sistemi speciali</h4> <a href="impianti-speciali.html">Infrastrutture di rete</a> <div class="gama-mega-rule"></div> <h4>Azienda e supporto</h4> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Tutti i servizi</a> <a href="tel:+390396776853">Chiama GaMa Service</a> <a href="mailto:info@gama-service.com">Scrivici una email</a> </div> </div>
 </div> </div>
-</div> <main> <section class="about-hero"> <div class="container about-hero-grid"> <div class="about-card"> <h1>Chi siamo</h1> <p>GaMa Service è un'azienda in forte crescita, specializzata nella gestione completa di interventi ordinari e straordinari su impianti aziendali e . Grazie a un team di professionisti qualificati, offriamo soluzioni a 360° per la progettazione, realizzazione e manutenzione di impianti termotecnici, meccanici, elettrici e opere edili. Siamo anche presenti nel Facility Management, offrendo servizi di arredamento, facchinaggio, giardinaggio e pulizie.</p> </div> <div class="about-image"> <img src="assets/img-02-a171af66d8fd.webp" alt="Tecnico specializzato GaMa Service al lavoro su impianto industriale"> </div> </div> </section> <section class="section light"> <div class="container"> <div class="section-head"> <div class="eyebrow">Chi siamo</div> <h2>I nostri valori</h2> <p>Da oltre 50 anni, quattro principi guidano ogni nostra decisione e ogni progetto che realizziamo.</p> </div> <div class="values-grid"> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div> <h3>Centralità del cliente</h3> <p>Ogni progetto nasce dall'ascolto. Adattiamo soluzioni e tempistiche alle reali esigenze di chi ci sceglie, con un servizio su misura.</p> </article> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div> <h3>Tradizione ed esperienza</h3> <p>Oltre mezzo secolo di competenze tramandate, dalla prima generazione ad oggi. Il passato ci dà solidità, il presente ci tiene agili.</p> </article> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div> <h3>Tecnologia</h3> <p>Strumenti digitali e attrezzature di ultima generazione per garantire precisione, velocità e tracciabilità in ogni fase del lavoro.</p> </article> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9 12 2"/></svg></div> <h3>Innovazione e futuro</h3> <p>Investiamo in ricerca e formazione continua per anticipare le esigenze del mercato e offrire soluzioni sempre all'avanguardia.</p> </article> </div> </div> </section> <section class="strengths"> <div class="strength-panel"> <div class="section-head"> <div class="eyebrow">I nostri punti di forza</div> <h2>Cosa ci rende competitivi</h2> <p>Una struttura organizzata e risorse proprie che ci permettono di gestire ogni progetto dall'inizio alla fine.</p> </div> <div class="strength-grid"> <article class="strength-card"> <div class="icon-box" style="margin-inline:auto"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4h16v18H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg></div> <h3>Ufficio tecnico</h3> <p>Progettazione interna e assistenza dedicata</p> </article> <article class="strength-card"> <div class="icon-box" style="margin-inline:auto"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div> <h3>Magazzino proprio</h3> <p>Materiali sempre disponibili, consegne rapide</p> </article> <article class="strength-card"> <div class="icon-box" style="margin-inline:auto"><svg viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M14 17h1l3-5h4v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg></div> <h3>Flotta mezzi con autisti</h3> <p>Logistica diretta e puntuale su ogni cantiere</p> </article> <article class="strength-card orange"> <div class="icon-box" style="margin-inline:auto; background:rgba(255,255,255,.18)"><svg viewBox="0 0 24 24" style="stroke:#fff"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div> <span class="big-num">75</span> <h3>Professionisti</h3> <p>25 dipendenti diretti + 50 collaboratori specializzati</p> </article> </div> <div class="team-title">Team di riferimento</div> <div class="team-grid"> <div class="team-pill">Responsabili di prodotto e servizi</div> <div class="team-pill">Responsabile sicurezza e lavoro</div> <div class="team-pill">Responsabile qualità</div> <div class="team-pill">Responsabili di cantiere</div> </div> </div> </section> <section class="cta" id="contatti"> <div class="container cta-box"> <h2>Vuoi conoscere meglio GaMa Service?</h2> <a class="btn" href="tel:+390396776853">Parla con noi</a> </div> </section> </main> <footer> <div class="container footer-grid"> <div> <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p> <p style="margin-top:14px">P.IVA 12048300961</p> </div> <div> <h4>Servizi</h4> <ul> <li><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a></li> <li><a href="impianti-elettrici.html">Impianti elettrici</a></li> <li><a href="impianti-speciali.html">Impianti speciali</a></li> <li><a href="edilizia.html">Edilizia</a></li> <li><a href="manutenzione.html">Manutenzione</a></li> </ul> </div> <div> <h4>Azienda</h4> <ul> <li><a href="chi-siamo.html">Chi siamo</a></li> <li><a href="servizi.html">Servizi</a></li> <li><a href="soluzioni.html">Soluzioni</a></li> <li><a href="contatti.html">Contatti</a></li> </ul> </div> <div> <h4>Contatti</h4> <ul> <li><a href="tel:+390396776853">+39 039 677 6853</a></li> <li><a href="mailto:info@gama-service.com">info@gama-service.com</a></li> <li>Lun - Ven · 08:30 - 18:30</li> </ul> </div> </div> <div class="container footer-bottom"> <span>© GaMa Service. Tutti i diritti riservati.</span> </div>
-</footer> <script> function updateDateTime() { const now = new Date(); const date = now.toLocaleDateString('it-IT', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }); const time = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); const datetime = document.getElementById('datetime'); if (!datetime) return; datetime.textContent = date + ' · ' + time; } updateDateTime(); setInterval(updateDateTime, 1000); </script>
+</div> <main> <section class="about-hero"> <div class="container about-hero-grid"> <div class="about-card"> <h1>Chi siamo</h1> <p>GaMa Service è un'azienda in forte crescita, specializzata nella gestione completa di interventi ordinari e straordinari su impianti aziendali e . Grazie a un team di professionisti qualificati, offriamo soluzioni a 360° per la progettazione, realizzazione e manutenzione di impianti termotecnici, meccanici, elettrici e opere edili. Siamo anche presenti nel Facility Management, offrendo servizi di arredamento, facchinaggio, giardinaggio e pulizie.</p> </div> <div class="about-image"> <img src="assets/img-02-a171af66d8fd.webp" alt="Tecnico specializzato GaMa Service al lavoro su impianto industriale"> </div> </div> </section> <section class="section light"> <div class="container"> <div class="section-head"> <div class="eyebrow">Chi siamo</div> <h2>I nostri valori</h2> <p>Da oltre 50 anni, quattro principi guidano ogni nostra decisione e ogni progetto che realizziamo.</p> </div> <div class="values-grid"> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div> <h3>Centralità del cliente</h3> <p>Ogni progetto nasce dall'ascolto. Adattiamo soluzioni e tempistiche alle reali esigenze di chi ci sceglie, con un servizio su misura.</p> </article> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div> <h3>Tradizione ed esperienza</h3> <p>Oltre mezzo secolo di competenze tramandate, dalla prima generazione ad oggi. Il passato ci dà solidità, il presente ci tiene agili.</p> </article> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div> <h3>Tecnologia</h3> <p>Strumenti digitali e attrezzature di ultima generazione per garantire precisione, velocità e tracciabilità in ogni fase del lavoro.</p> </article> <article class="value-card"> <div class="icon-box"><svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9 12 2"/></svg></div> <h3>Innovazione e futuro</h3> <p>Investiamo in ricerca e formazione continua per anticipare le esigenze del mercato e offrire soluzioni sempre all'avanguardia.</p> </article> </div> </div> </section> <section class="strengths"> <div class="strength-panel"> <div class="section-head"> <div class="eyebrow">I nostri punti di forza</div> <h2>Cosa ci rende competitivi</h2> <p>Una struttura organizzata e risorse proprie che ci permettono di gestire ogni progetto dall'inizio alla fine.</p> </div> <div class="strength-grid"> <article class="strength-card"> <div class="icon-box" style="margin-inline:auto"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4h16v18H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg></div> <h3>Ufficio tecnico</h3> <p>Progettazione interna e assistenza dedicata</p> </article> <article class="strength-card"> <div class="icon-box" style="margin-inline:auto"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div> <h3>Magazzino proprio</h3> <p>Materiali sempre disponibili, consegne rapide</p> </article> <article class="strength-card"> <div class="icon-box" style="margin-inline:auto"><svg viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M14 17h1l3-5h4v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg></div> <h3>Flotta mezzi con autisti</h3> <p>Logistica diretta e puntuale su ogni cantiere</p> </article> <article class="strength-card orange"> <div class="icon-box" style="margin-inline:auto; background:rgba(255,255,255,.18)"><svg viewBox="0 0 24 24" style="stroke:#fff"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div> <span class="big-num">75</span> <h3>Professionisti</h3> <p>25 dipendenti diretti + 50 collaboratori specializzati</p> </article> </div> <div class="team-title">Team di riferimento</div> <div class="team-grid"> <div class="team-pill">Responsabili di prodotto e servizi</div> <div class="team-pill">Responsabile sicurezza e lavoro</div> <div class="team-pill">Responsabile qualità</div> <div class="team-pill">Responsabili di cantiere</div> </div> </div> </section> <section class="cta" id="contatti"> <div class="container cta-box"> <h2>Vuoi conoscere meglio GaMa Service?</h2> <a class="btn" href="tel:+390396776853">Parla con noi</a> </div> </section> </main> 
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>GaMa Service</h3>
+      <strong>S.R.L.</strong>
+      <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p>
+      <p>P.IVA 12048300961</p>
+    </div>
+
+    <div>
+      <h4>Servizi</h4>
+      <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a>
+      <a href="impianti-elettrici.html">Impianti elettrici</a>
+      <a href="impianti-speciali.html">Impianti speciali</a>
+      <a href="edilizia.html">Edilizia</a>
+      <a href="facility-management.html">Facility Management</a>
+    </div>
+
+    <div>
+      <h4>Azienda</h4>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="soluzioni.html">Soluzioni</a>
+      <a href="contatti.html">Contatti</a>
+    </div>
+
+    <div>
+      <h4>Contatti</h4>
+      <a href="tel:+390396776853">+39 039 677 6853</a>
+      <a href="mailto:info@gama-service.com">info@gama-service.com</a>
+      <p>Lun - Ven · 08:30 - 18:30</p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© GaMa Service S.R.L. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+ <script> function updateDateTime() { const now = new Date(); const date = now.toLocaleDateString('it-IT', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }); const time = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); const datetime = document.getElementById('datetime'); if (!datetime) return; datetime.textContent = date + ' · ' + time; } updateDateTime(); setInterval(updateDateTime, 1000); </script>
 <script>(function(){const toggle=document.querySelector('.gama-menu-toggle');const panel=document.getElementById('gamaMegaMenu');if(!toggle||!panel)return;function setMenu(open){document.body.classList.toggle('gama-menu-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');panel.setAttribute('aria-hidden',open?'false':'true')}setMenu(false);toggle.addEventListener('click',function(){setMenu(!document.body.classList.contains('gama-menu-open'))});document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});panel.addEventListener('click',function(e){if(e.target===panel)setMenu(false)});panel.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false)})})})();</script> <script>
 (function () { const logos = document.querySelectorAll('.nav > .brand'); logos.forEach(function (logo) { logo.addEventListener('mousemove', function (event) { const rect = logo.getBoundingClientRect(); const x = ((event.clientX - rect.left) / rect.width) * 100; const y = ((event.clientY - rect.top) / rect.height) * 100; logo.style.setProperty('--logo-x', x + '%'); logo.style.setProperty('--logo-y', y + '%'); }); logo.addEventListener('mouseleave', function () { logo.style.setProperty('--logo-x', '50%'); logo.style.setProperty('--logo-y', '50%'); }); });
 })();
