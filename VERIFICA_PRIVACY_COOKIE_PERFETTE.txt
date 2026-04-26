@@ -1,0 +1,8 @@
+{
+  "privacy_bad_code_visible": false,
+  "cookie_bad_code_visible": false,
+  "privacy_has_header": true,
+  "cookie_has_header": true,
+  "privacy_size": 111571,
+  "cookie_size": 137425
+}

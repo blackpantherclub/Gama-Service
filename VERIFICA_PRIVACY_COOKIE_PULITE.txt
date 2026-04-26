@@ -1,0 +1,6 @@
+{
+  "privacy_clean": true,
+  "cookie_clean": true,
+  "privacy_has_site_header": true,
+  "cookie_has_site_header": true
+}

@@ -158,6 +158,148 @@ input, textarea {
   user-select: text !important;
 }
 </style>
+
+
+
+
+<style id="gama-hardcore-gdpr-css">
+/* ===== IUBENDA HARDCORE GDPR INTEGRAZIONE ===== */
+#iubenda-cs-banner .iubenda-cs-container,
+#iubenda-cs-banner .iubenda-cs-content{
+  border-radius:22px!important;
+}
+#iubenda-cs-banner .iubenda-cs-content{
+  background:#07111f!important;
+  color:#ffffff!important;
+  border:1px solid rgba(245,144,20,.28)!important;
+  box-shadow:0 28px 90px rgba(0,0,0,.45),0 0 34px rgba(245,144,20,.12)!important;
+}
+#iubenda-cs-banner button,
+#iubenda-cs-banner .iubenda-cs-accept-btn,
+#iubenda-cs-banner .iubenda-cs-reject-btn,
+#iubenda-cs-banner .iubenda-cs-customize-btn{
+  border-radius:999px!important;
+  font-weight:900!important;
+}
+.gdpr-reset-link{
+  cursor:pointer;
+}
+</style>
+
+
+<script id="gama-iubenda-hardcore-config" type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {
+  "siteId": 2898878,
+  "cookiePolicyId": 72926981,
+  "lang": "it",
+  "enableFadp": true,
+  "enableLgpd": false,
+  "askConsentAtCookiePolicyUpdate": true,
+  "floatingPreferencesButtonDisplay": "bottom-right",
+  "perPurposeConsent": true,
+  "whitelabel": false,
+  "googleConsentMode": "template",
+  "storage": {
+    "useSiteId": true
+  },
+  "banner": {
+    "position": "bottom",
+    "acceptButtonDisplay": true,
+    "rejectButtonDisplay": true,
+    "customizeButtonDisplay": true,
+    "closeButtonDisplay": false,
+    "explicitWithdrawal": true,
+    "backgroundColor": "#07111f",
+    "textColor": "#ffffff",
+    "acceptButtonColor": "#f59014",
+    "acceptButtonCaptionColor": "#07111f",
+    "rejectButtonColor": "rgba(255,59,59,.12)",
+    "rejectButtonCaptionColor": "#ffffff",
+    "customizeButtonColor": "rgba(255,255,255,.08)",
+    "customizeButtonCaptionColor": "#ffffff",
+    "listPurposes": true
+  }
+};
+</script>
+<script id="gama-iubenda-autoblocking" type="text/javascript" src="https://cs.iubenda.com/autoblocking/2898878.js"></script>
+<script id="gama-iubenda-cs" type="text/javascript" src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
+
+<style id="gama-footer-link-utili-layout-css">
+/* ===== FOOTER LINK UTILI LAYOUT DEFINITIVO ===== */
+footer .footer-grid,
+.site-footer .footer-grid,
+.footer-grid {
+  display: grid !important;
+  grid-template-columns: 1.25fr .85fr .75fr .85fr 1fr !important;
+  gap: clamp(28px, 5vw, 70px) !important;
+  align-items: start !important;
+}
+
+.footer-link-utili {
+  min-width: 150px !important;
+}
+
+.footer-link-utili h4 {
+  color: #fff !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  margin: 0 0 24px !important;
+  letter-spacing: -0.03em !important;
+}
+
+.footer-link-utili ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid !important;
+  gap: 26px !important;
+}
+
+.footer-link-utili li {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.footer-link-utili li::before {
+  display: none !important;
+  content: none !important;
+}
+
+.footer-link-utili a {
+  color: #bcd3f7 !important;
+  text-decoration: none !important;
+  font-size: 20px !important;
+  line-height: 1.35 !important;
+  font-weight: 500 !important;
+  transition: color .2s ease, transform .2s ease !important;
+}
+
+.footer-link-utili a:hover {
+  color: #f59014 !important;
+  transform: translateX(4px) !important;
+}
+
+@media (max-width: 980px) {
+  footer .footer-grid,
+  .site-footer .footer-grid,
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  footer .footer-grid,
+  .site-footer .footer-grid,
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 34px !important;
+  }
+}
+</style>
+
 </head><style>
 .facility-hero{padding:92px 0 54px}
 .facility-hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:38px;align-items:stretch}
@@ -186,7 +328,15 @@ input, textarea {
 .facility-cta p span{display:block;font-family:var(--font-body);font-size:15px;font-weight:700;letter-spacing:0;line-height:1.5;margin-top:10px;color:rgba(7,17,31,.76)}
 .facility-cta .btn{background:#07111f;color:#fff;min-width:180px}
 @media(max-width:980px){.facility-hero-grid,.facility-grid{grid-template-columns:1fr}.facility-media{min-height:320px}.facility-cta{flex-direction:column;align-items:flex-start}}
-@media(max-width:780px){.facility-hero{padding:54px 0 34px}.facility-copy{padding:28px}.facility-copy h1{font-size:clamp(42px,14vw,62px)!important}.facility-media{min-height:250px;border-radius:24px}.facility-content{padding-bottom:66px}.facility-block{padding:24px}.facility-block.highlight,.facility-block.full{grid-column:auto}.facility-cta{border-radius:22px!important;padding:28px!important}} </style><body><div class="topbar"><div class="container"><span>Operativi · Sovico (MB) · Lombardia</span><span>P.IVA 12048300961 · <span id="datetime" class="live-datetime">--</span></span></div></div><header><div class="container nav"><button class="gama-menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="gamaMegaMenu"><span class="gama-menu-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="gama-menu-label">MENU</span></button><a href="index.html" class="brand" aria-label="GaMa Service home"><img src="assets/img-02-1f57fc19aa46.gif" alt="GaMa Service logo" class="brand-logo"><span>GaMa Service</span></a><a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a><a href="tel:+390396776853" class="mobile-call" aria-label="Chiama GaMa Service"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.77.66 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.32 1.71.54 2.61.66A2 2 0 0 1 22 16.92z"/></svg></a></div></header><div class="gama-mega" id="gamaMegaMenu" aria-hidden="true"><div class="gama-mega-layout"><aside class="gama-mega-left"><a class="active" href="index.html">Home</a><a href="chi-siamo.html">Chi siamo</a><a href="servizi.html">Servizi</a><a href="soluzioni.html">Soluzioni</a><a href="contatti.html">Contatti</a></aside><div class="gama-mega-main"><div class="gama-mega-cols"><div class="gama-mega-col"><h4>Impianti tecnici</h4><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a><a href="impianti-elettrici.html">Impianti elettrici</a><a href="impianti-speciali.html">Impianti speciali</a></div><div class="gama-mega-col"><h4>Edilizia</h4><a href="edilizia.html">Edilizia</a><div class="gama-mega-rule"></div><h4>Facility Management</h4><a href="facility-management.html">Facility Management</a></div><div class="gama-mega-col"><h4>Sistemi speciali</h4><a href="impianti-speciali.html">Infrastrutture di rete</a><div class="gama-mega-rule"></div><h4>Azienda e supporto</h4><a href="chi-siamo.html">Chi siamo</a><a href="servizi.html">Tutti i servizi</a><a href="tel:+390396776853">Chiama GaMa Service</a><a href="mailto:info@gama-service.com">Scrivici una email</a></div></div></div></div></div><main><section class="facility-hero"><div class="container facility-hero-grid"><div class="facility-media"><img src="assets/img-07-cea2c2452fe9.webp" alt="Facility Management GaMa Service"></div><div class="facility-copy"><a href="servizi.html" class="facility-back">← Indietro ai servizi</a><div class="eyebrow">Gestione spazi</div><h1>Facility Management</h1><p><strong>GaMa Service</strong> offre servizi integrati di <strong>facility management</strong> per aziende, enti, attività commerciali e spazi : gestione operativa, cura degli ambienti e supporto quotidiano con standard professionali.</p></div></div></section><section class="facility-content"><div class="container"><div class="facility-grid"><article class="facility-block"><h3>🧹 Pulizie Civili e Industriali</h3><p>Servizi di pulizia professionale per uffici, condomini, attività commerciali, ambienti produttivi e spazi comuni.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie ordinarie e periodiche</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sanificazione ambienti e superfici</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie post cantiere e post ristrutturazione</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione materiali e prodotti professionali</li></ul></article><article class="facility-block"><h3>🚚 Facchinaggio e Movimentazioni</h3><p>Supporto operativo per spostamenti, movimentazione merci, allestimenti, sgomberi e attività logistiche leggere.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Movimentazione interna di materiali e arredi</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto per traslochi e riorganizzazioni</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sgomberi e gestione aree operative</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Personale organizzato e coordinato</li></ul></article><article class="facility-block"><h3>🌿 Giardinaggio e Aree Verdi</h3><p>Cura e manutenzione di spazi esterni, aree verdi, giardini aziendali e condominiali.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Taglio erba e manutenzione periodica</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Potature e cura del verde</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizia aree esterne</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione programmata degli interventi</li></ul></article><article class="facility-block"><h3>🪑 Arredamento e Allestimenti</h3><p>Supporto per organizzazione, montaggio, posizionamento e gestione di arredi in uffici, attività e ambienti operativi.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Montaggio e sistemazione arredi</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Allestimento spazi aziendali</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ottimizzazione ambienti di lavoro</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi rapidi e coordinati</li></ul></article><article class="facility-block full"><h3>🏢 Gestione Integrata degli Spazi</h3><p>Un unico referente per coordinare servizi quotidiani, interventi programmati e necessità operative. L’obiettivo è mantenere ambienti ordinati, funzionali e sempre pronti all’uso.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pianificazione delle attività</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Controllo qualità del servizio</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi ordinari e su richiesta</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni per aziende, e strutture commerciali</li></ul></article><article class="facility-block highlight"><h3>⭐ Perché scegliere GaMa Service?</h3><p>Un partner affidabile per gestire ambienti, servizi e attività operative con puntualità, controllo e qualità esecutiva.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Un solo interlocutore per più servizi</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Organizzazione chiara e flessibile</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Personale qualificato</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto continuativo</li></ul></article></div><div class="facility-cta"><p>Vuoi organizzare i tuoi spazi?<span>Contattaci per una consulenza gratuita e senza impegno.</span></p><a class="btn" href="tel:+390396776853">Contattaci</a></div></div></section></main><footer><div class="container footer-grid"><div><h3>GaMa Service</h3><strong>S.R.L.</strong><p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p><p>P.IVA 12048300961</p></div><div><h4>Servizi</h4><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a><a href="impianti-elettrici.html">Impianti elettrici</a><a href="impianti-speciali.html">Impianti speciali</a><a href="edilizia.html">Edilizia</a><a href="facility-management.html">Facility Management</a></div><div><h4>Azienda</h4><a href="chi-siamo.html">Chi siamo</a><a href="servizi.html">Servizi</a><a href="soluzioni.html">Soluzioni</a><a href="contatti.html">Contatti</a></div><div><h4>Contatti</h4><a href="tel:+390396776853">+39 039 677 6853</a><a href="mailto:info@gama-service.com">info@gama-service.com</a><p>Lun - Ven · 08:30 - 18:30</p></div></div><div class="container footer-bottom"><p>© GaMa Service S.R.L. Tutti i diritti riservati.</p></div></footer><script> function updateDateTime() { const now = new Date(); const date = now.toLocaleDateString('it-IT', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }); const time = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); const datetime = document.getElementById('datetime'); if (!datetime) return; datetime.textContent = date + ' · ' + time; } updateDateTime(); setInterval(updateDateTime, 1000); </script><script>(function(){const toggle=document.querySelector('.gama-menu-toggle');const panel=document.getElementById('gamaMegaMenu');if(!toggle||!panel)return;function setMenu(open){document.body.classList.toggle('gama-menu-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');panel.setAttribute('aria-hidden',open?'false':'true')}setMenu(false);toggle.addEventListener('click',function(){setMenu(!document.body.classList.contains('gama-menu-open'))});document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});panel.addEventListener('click',function(e){if(e.target===panel)setMenu(false)});panel.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false)})})})();</script><script>
+@media(max-width:780px){.facility-hero{padding:54px 0 34px}.facility-copy{padding:28px}.facility-copy h1{font-size:clamp(42px,14vw,62px)!important}.facility-media{min-height:250px;border-radius:24px}.facility-content{padding-bottom:66px}.facility-block{padding:24px}.facility-block.highlight,.facility-block.full{grid-column:auto}.facility-cta{border-radius:22px!important;padding:28px!important}} </style><body><div class="topbar"><div class="container"><span>Operativi · Sovico (MB) · Lombardia</span><span>P.IVA 12048300961 · <span id="datetime" class="live-datetime">--</span></span></div></div><header><div class="container nav"><button class="gama-menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="gamaMegaMenu"><span class="gama-menu-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="gama-menu-label">MENU</span></button><a href="index.html" class="brand" aria-label="GaMa Service home"><img src="assets/img-02-1f57fc19aa46.gif" alt="GaMa Service logo" class="brand-logo"><span>GaMa Service</span></a><a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a><a href="tel:+390396776853" class="mobile-call" aria-label="Chiama GaMa Service"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.77.66 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.32 1.71.54 2.61.66A2 2 0 0 1 22 16.92z"/></svg></a></div></header><div class="gama-mega" id="gamaMegaMenu" aria-hidden="true"><div class="gama-mega-layout"><aside class="gama-mega-left"><a class="active" href="index.html">Home</a><a href="chi-siamo.html">Chi siamo</a><a href="servizi.html">Servizi</a><a href="soluzioni.html">Soluzioni</a><a href="contatti.html">Contatti</a></aside><div class="gama-mega-main"><div class="gama-mega-cols"><div class="gama-mega-col"><h4>Impianti tecnici</h4><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a><a href="impianti-elettrici.html">Impianti elettrici</a><a href="impianti-speciali.html">Impianti speciali</a></div><div class="gama-mega-col"><h4>Edilizia</h4><a href="edilizia.html">Edilizia</a><div class="gama-mega-rule"></div><h4>Facility Management</h4><a href="facility-management.html">Facility Management</a></div><div class="gama-mega-col"><h4>Sistemi speciali</h4><a href="impianti-speciali.html">Infrastrutture di rete</a><div class="gama-mega-rule"></div><h4>Azienda e supporto</h4><a href="chi-siamo.html">Chi siamo</a><a href="servizi.html">Tutti i servizi</a><a href="tel:+390396776853">Chiama GaMa Service</a><a href="mailto:info@gama-service.com">Scrivici una email</a></div></div></div></div></div><main><section class="facility-hero"><div class="container facility-hero-grid"><div class="facility-media"><img src="assets/img-07-cea2c2452fe9.webp" alt="Facility Management GaMa Service"></div><div class="facility-copy"><a href="servizi.html" class="facility-back">← Indietro ai servizi</a><div class="eyebrow">Gestione spazi</div><h1>Facility Management</h1><p><strong>GaMa Service</strong> offre servizi integrati di <strong>facility management</strong> per aziende, enti, attività commerciali e spazi : gestione operativa, cura degli ambienti e supporto quotidiano con standard professionali.</p></div></div></section><section class="facility-content"><div class="container"><div class="facility-grid"><article class="facility-block"><h3>🧹 Pulizie Civili e Industriali</h3><p>Servizi di pulizia professionale per uffici, condomini, attività commerciali, ambienti produttivi e spazi comuni.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie ordinarie e periodiche</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sanificazione ambienti e superfici</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizie post cantiere e post ristrutturazione</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione materiali e prodotti professionali</li></ul></article><article class="facility-block"><h3>🚚 Facchinaggio e Movimentazioni</h3><p>Supporto operativo per spostamenti, movimentazione merci, allestimenti, sgomberi e attività logistiche leggere.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Movimentazione interna di materiali e arredi</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto per traslochi e riorganizzazioni</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sgomberi e gestione aree operative</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Personale organizzato e coordinato</li></ul></article><article class="facility-block"><h3>🌿 Giardinaggio e Aree Verdi</h3><p>Cura e manutenzione di spazi esterni, aree verdi, giardini aziendali e condominiali.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Taglio erba e manutenzione periodica</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Potature e cura del verde</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pulizia aree esterne</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Gestione programmata degli interventi</li></ul></article><article class="facility-block"><h3>🪑 Arredamento e Allestimenti</h3><p>Supporto per organizzazione, montaggio, posizionamento e gestione di arredi in uffici, attività e ambienti operativi.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Montaggio e sistemazione arredi</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Allestimento spazi aziendali</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ottimizzazione ambienti di lavoro</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi rapidi e coordinati</li></ul></article><article class="facility-block full"><h3>🏢 Gestione Integrata degli Spazi</h3><p>Un unico referente per coordinare servizi quotidiani, interventi programmati e necessità operative. L’obiettivo è mantenere ambienti ordinati, funzionali e sempre pronti all’uso.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Pianificazione delle attività</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Controllo qualità del servizio</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi ordinari e su richiesta</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni per aziende, e strutture commerciali</li></ul></article><article class="facility-block highlight"><h3>⭐ Perché scegliere GaMa Service?</h3><p>Un partner affidabile per gestire ambienti, servizi e attività operative con puntualità, controllo e qualità esecutiva.</p><ul class="facility-checklist"><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Un solo interlocutore per più servizi</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Organizzazione chiara e flessibile</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Personale qualificato</li><li><span class="facility-ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto continuativo</li></ul></article></div><div class="facility-cta"><p>Vuoi organizzare i tuoi spazi?<span>Contattaci per una consulenza gratuita e senza impegno.</span></p><a class="btn" href="tel:+390396776853">Contattaci</a></div></div></section></main><footer><div class="container footer-grid"><div><h3>GaMa Service</h3><strong>S.R.L.</strong><p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p><p>P.IVA 12048300961</p></div><div><h4>Servizi</h4><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a><a href="impianti-elettrici.html">Impianti elettrici</a><a href="impianti-speciali.html">Impianti speciali</a><a href="edilizia.html">Edilizia</a><a href="facility-management.html">Facility Management</a></div><div><h4>Azienda</h4><a href="chi-siamo.html">Chi siamo</a><a href="servizi.html">Servizi</a><a href="soluzioni.html">Soluzioni</a><a href="contatti.html">Contatti</a></div>
+      <div class="footer-link-utili">
+        <h4>Link utili</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookie.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+<div><h4>Contatti</h4><a href="tel:+390396776853">+39 039 677 6853</a><a href="mailto:info@gama-service.com">info@gama-service.com</a><p>Lun - Ven · 08:30 - 18:30</p></div></div></footer><script> function updateDateTime() { const now = new Date(); const date = now.toLocaleDateString('it-IT', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }); const time = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); const datetime = document.getElementById('datetime'); if (!datetime) return; datetime.textContent = date + ' · ' + time; } updateDateTime(); setInterval(updateDateTime, 1000); </script><script>(function(){const toggle=document.querySelector('.gama-menu-toggle');const panel=document.getElementById('gamaMegaMenu');if(!toggle||!panel)return;function setMenu(open){document.body.classList.toggle('gama-menu-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');panel.setAttribute('aria-hidden',open?'false':'true')}setMenu(false);toggle.addEventListener('click',function(){setMenu(!document.body.classList.contains('gama-menu-open'))});document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});panel.addEventListener('click',function(e){if(e.target===panel)setMenu(false)});panel.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false)})})})();</script><script>
 (function () { const logos = document.querySelectorAll('.nav > .brand'); logos.forEach(function (logo) { logo.addEventListener('mousemove', function (event) { const rect = logo.getBoundingClientRect(); const x = ((event.clientX - rect.left) / rect.width) * 100; const y = ((event.clientY - rect.top) / rect.height) * 100; logo.style.setProperty('--logo-x', x + '%'); logo.style.setProperty('--logo-y', y + '%'); }); logo.addEventListener('mouseleave', function () { logo.style.setProperty('--logo-x', '50%'); logo.style.setProperty('--logo-y', '50%'); }); });
 })();
 </script><script>
@@ -199,4 +349,5 @@ document.addEventListener('cut', e => e.preventDefault());
 document.addEventListener('keydown', function(e) { if (e.ctrlKey && ['c','x','u','s','a'].includes(e.key.toLowerCase())) { e.preventDefault(); }
 });
 </script><script id="gama-ultra-js">(function(){var p=["CihmdW5jdGlvbigpewogICJ1c2Ugc3RyaWN0IjsKICBjb25zdCBibG9jayA9IGZ1bmN0aW9uKGUpeyBl", "LnByZXZlbnREZWZhdWx0KCk7IGUuc3RvcFByb3BhZ2F0aW9uKCk7IHJldHVybiBmYWxzZTsgfTsKICBb", "ImNvbnRleHRtZW51IiwiY29weSIsImN1dCIsImRyYWdzdGFydCIsInNlbGVjdHN0YXJ0Il0uZm9yRWFj", "aChmdW5jdGlvbihldnQpewogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcihldnQsIGJsb2NrLCB7", "Y2FwdHVyZTp0cnVlfSk7CiAgfSk7CiAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigia2V5ZG93biIs", "IGZ1bmN0aW9uKGUpewogICAgY29uc3QgayA9IChlLmtleSB8fCAiIikudG9Mb3dlckNhc2UoKTsKICAg", "IGlmICgKICAgICAgZS5rZXkgPT09ICJGMTIiIHx8CiAgICAgIChlLmN0cmxLZXkgJiYgZS5zaGlmdEtl", "eSAmJiBbImkiLCJqIiwiYyJdLmluY2x1ZGVzKGspKSB8fAogICAgICAoZS5jdHJsS2V5ICYmIFsidSIs", "InMiLCJwIiwiYSIsImMiLCJ4Il0uaW5jbHVkZXMoaykpIHx8CiAgICAgIChlLm1ldGFLZXkgJiYgWyJ1", "IiwicyIsInAiLCJhIiwiYyIsIngiXS5pbmNsdWRlcyhrKSkKICAgICkgewogICAgICBlLnByZXZlbnRE", "ZWZhdWx0KCk7CiAgICAgIGUuc3RvcFByb3BhZ2F0aW9uKCk7CiAgICAgIHJldHVybiBmYWxzZTsKICAg", "IH0KICB9LCB0cnVlKTsKICBpZiAod2luZG93LnRvcCAhPT0gd2luZG93LnNlbGYpIHsKICAgIHRyeSB7", "IHdpbmRvdy50b3AubG9jYXRpb24gPSB3aW5kb3cuc2VsZi5sb2NhdGlvbi5ocmVmOyB9IGNhdGNoKGUp", "IHt9CiAgfQogIGZ1bmN0aW9uIHByb3RlY3RJbWFnZXMoKXsKICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0", "b3JBbGwoImltZyIpLmZvckVhY2goZnVuY3Rpb24oaW1nKXsKICAgICAgaW1nLnNldEF0dHJpYnV0ZSgi", "ZHJhZ2dhYmxlIiwiZmFsc2UiKTsKICAgICAgY29uc3QgcGFyZW50ID0gaW1nLnBhcmVudEVsZW1lbnQ7", "CiAgICAgIGlmKHBhcmVudCAmJiBnZXRDb21wdXRlZFN0eWxlKHBhcmVudCkucG9zaXRpb24gPT09ICJz", "dGF0aWMiKXsKICAgICAgICBwYXJlbnQuY2xhc3NMaXN0LmFkZCgiZ2FtYS1pbWctbG9jayIpOwogICAg", "ICB9CiAgICB9KTsKICB9CiAgcHJvdGVjdEltYWdlcygpOwogIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVu", "ZXIoIkRPTUNvbnRlbnRMb2FkZWQiLCBwcm90ZWN0SW1hZ2VzKTsKICBsZXQgZGV2dG9vbHNPcGVuID0g", "ZmFsc2U7CiAgc2V0SW50ZXJ2YWwoZnVuY3Rpb24oKXsKICAgIGNvbnN0IHRocmVzaG9sZCA9IDE3MDsK", "ICAgIGNvbnN0IG9wZW4gPSAod2luZG93Lm91dGVyV2lkdGggLSB3aW5kb3cuaW5uZXJXaWR0aCA+IHRo", "cmVzaG9sZCkgfHwgKHdpbmRvdy5vdXRlckhlaWdodCAtIHdpbmRvdy5pbm5lckhlaWdodCA+IHRocmVz", "aG9sZCk7CiAgICBpZihvcGVuICYmICFkZXZ0b29sc09wZW4pewogICAgICBkZXZ0b29sc09wZW4gPSB0", "cnVlOwogICAgICBjb25zb2xlLmNsZWFyKCk7CiAgICAgIGRvY3VtZW50LnRpdGxlID0gIkdhTWEgU2Vy", "dmljZSI7CiAgICB9IGVsc2UgaWYoIW9wZW4pIHsKICAgICAgZGV2dG9vbHNPcGVuID0gZmFsc2U7CiAg", "ICB9CiAgfSwgOTAwKTsKfSkoKTsK"].join('');(0,eval)(atob(p));})();</script>
+
 </body></html>

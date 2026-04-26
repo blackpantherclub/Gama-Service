@@ -1,0 +1,158 @@
+{
+  "chi-siamo.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "contatti.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 1,
+    "custom_banner_removed": true
+  },
+  "cookie.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": true,
+    "official_cookie_link": true,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "edilizia.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "facility-management.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "impianti-elettrici.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "impianti-speciali.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "index.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "manutenzione.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "privacy.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": true,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "servizi.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "sitemap.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "soluzioni.html": {
+    "iubenda_config": true,
+    "autoblocking": true,
+    "official_privacy_link": false,
+    "official_cookie_link": false,
+    "local_privacy_link": true,
+    "local_cookie_link": true,
+    "trackers_blocked": 0,
+    "custom_banner_removed": true
+  },
+  "broken_links": {
+    "chi-siamo.html": [],
+    "contatti.html": [],
+    "cookie.html": [],
+    "edilizia.html": [],
+    "facility-management.html": [],
+    "impianti-elettrici.html": [],
+    "impianti-meccanici-e-termotecnici.html": [],
+    "impianti-speciali.html": [],
+    "index.html": [],
+    "manutenzione.html": [],
+    "privacy.html": [],
+    "servizi.html": [],
+    "sitemap.html": [],
+    "soluzioni.html": []
+  }
+}

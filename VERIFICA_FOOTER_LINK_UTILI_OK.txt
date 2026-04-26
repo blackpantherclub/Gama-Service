@@ -1,0 +1,86 @@
+{
+  "chi-siamo.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "contatti.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "cookie.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "edilizia.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "facility-management.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "impianti-elettrici.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "impianti-speciali.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "index.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "manutenzione.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "privacy.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "servizi.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "sitemap.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  },
+  "soluzioni.html": {
+    "footer_link_utili_count": 9,
+    "layout_css": true,
+    "privacy_link": true,
+    "cookie_link": true
+  }
+}
