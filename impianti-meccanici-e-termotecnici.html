@@ -267,29 +267,55 @@ footer p {
 }
 
 
-/* MOBILE CALL ICON */
-.mobile-call{
-  display:none;
-  width:48px;
-  height:48px;
-  border-radius:14px;
-  align-items:center;
-  justify-content:center;
-  background:rgba(245,144,20,.15);
-  border:1px solid rgba(245,144,20,.3);
-  font-size:22px;
-  color:#f59014;
-  text-decoration:none;
-  transition:.25s;
+
+/* FIX MOBILE CALL ICON VISIBILE */
+.mobile-call {
+  display: none !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 16px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  justify-self: end !important;
+  background: rgba(245,144,20,.15) !important;
+  border: 1px solid rgba(245,144,20,.35) !important;
+  color: #f59014 !important;
+  text-decoration: none !important;
+  position: relative !important;
+  z-index: 9999 !important;
+  box-shadow: 0 0 18px rgba(245,144,20,.16) !important;
 }
-.mobile-call:hover{
-  background:rgba(245,144,20,.25);
-  transform:scale(1.08);
-  box-shadow:0 0 20px rgba(245,144,20,.4);
+
+.mobile-call svg {
+  width: 22px !important;
+  height: 22px !important;
+  stroke: currentColor !important;
+  stroke-width: 2.2 !important;
+  fill: none !important;
 }
-@media(max-width:780px){
-  .mobile-call{display:flex;}
-  .btn-primary{display:none!important;}
+
+.mobile-call:active {
+  transform: scale(.96) !important;
+}
+
+@media (max-width: 780px) {
+  .mobile-call {
+    display: inline-flex !important;
+  }
+
+  .nav {
+    grid-template-columns: 62px 1fr 62px !important;
+  }
+
+  .nav .btn-primary {
+    display: none !important;
+  }
+}
+
+@media (min-width: 781px) {
+  .mobile-call {
+    display: none !important;
+  }
 }
 
 </style>
@@ -328,7 +354,13 @@ footer p {
 </head> <body> <div class="topbar"> <div class="container"> <span>Operativi · Sovico (MB) · Lombardia</span> <span>P.IVA 12048300961 · <span id="datetime" class="live-datetime">--</span></span> </div> </div> <header> <div class="container nav">
 <button class="gama-menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="gamaMegaMenu"><span class="gama-menu-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="gama-menu-label">MENU</span></button>
 <a href="index.html" class="brand" aria-label="GaMa Service home"> <img src="assets/img-02-1f57fc19aa46.gif" alt="GaMa Service logo" class="brand-logo"> <span>GaMa Service</span> </a>
-<a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a> </div> </header> <div class="gama-mega" id="gamaMegaMenu" aria-hidden="true"> <div class="gama-mega-layout"> <aside class="gama-mega-left"> <a class="active" href="index.html">Home</a> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Servizi</a> <a href="soluzioni.html">Soluzioni</a> <a href="contatti.html">Contatti</a> </aside> <div class="gama-mega-main"> <div class="gama-mega-cols"> <div class="gama-mega-col"> <h4>Impianti tecnici</h4> <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a> <a href="impianti-elettrici.html">Impianti elettrici</a> <a href="impianti-speciali.html">Impianti speciali</a> </div> <div class="gama-mega-col"> <h4>Edilizia</h4> <a href="edilizia.html">Edilizia</a> <div class="gama-mega-rule"></div> <h4>Facility Management</h4> <a href="facility-management.html">Facility Management</a> </div> <div class="gama-mega-col"> <h4>Sistemi speciali</h4> <a href="impianti-speciali.html">Infrastrutture di rete</a> <div class="gama-mega-rule"></div> <h4>Azienda e supporto</h4> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Tutti i servizi</a> <a href="tel:+390396776853">Chiama GaMa Service</a> <a href="mailto:info@gama-service.com">Scrivici una email</a> </div> </div>
+<a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a> 
+<a href="tel:+390396776853" class="mobile-call" aria-label="Chiama GaMa Service">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.77.66 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.32 1.71.54 2.61.66A2 2 0 0 1 22 16.92z"/>
+  </svg>
+</a>
+</div> </header> <div class="gama-mega" id="gamaMegaMenu" aria-hidden="true"> <div class="gama-mega-layout"> <aside class="gama-mega-left"> <a class="active" href="index.html">Home</a> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Servizi</a> <a href="soluzioni.html">Soluzioni</a> <a href="contatti.html">Contatti</a> </aside> <div class="gama-mega-main"> <div class="gama-mega-cols"> <div class="gama-mega-col"> <h4>Impianti tecnici</h4> <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a> <a href="impianti-elettrici.html">Impianti elettrici</a> <a href="impianti-speciali.html">Impianti speciali</a> </div> <div class="gama-mega-col"> <h4>Edilizia</h4> <a href="edilizia.html">Edilizia</a> <div class="gama-mega-rule"></div> <h4>Facility Management</h4> <a href="facility-management.html">Facility Management</a> </div> <div class="gama-mega-col"> <h4>Sistemi speciali</h4> <a href="impianti-speciali.html">Infrastrutture di rete</a> <div class="gama-mega-rule"></div> <h4>Azienda e supporto</h4> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Tutti i servizi</a> <a href="tel:+390396776853">Chiama GaMa Service</a> <a href="mailto:info@gama-service.com">Scrivici una email</a> </div> </div>
 </div> </div>
 </div> <main> <section class="hero"> <div class="container hero-grid"> <div class="hero-img"> <img src="assets/img-03-0d421d0fb6c7.webp" alt="Tecnico impianti meccanici e termotecnici"> </div> <div class="hero-text"> <a href="servizi.html" class="back-link"> <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Indietro ai servizi </a> <div class="eyebrow">Servizi tecnici</div> <h1>Impianti Meccanici e Termotecnici</h1> <p><strong>GaMa Service</strong> è specializzata nella progettazione, installazione e manutenzione di soluzioni impiantistiche per il <strong>comfort abitativo</strong> e l'<strong>efficienza energetica</strong> di edifici residenziali, commerciali e industriali.</p> </div> </div> </section> <section class="content"> <div class="container"> <div class="sections-grid"> <div class="section-block"> <h3><span class="emoji">🚿</span> Impianti Idraulici Industriali e Civili</h3> <p>Servizi completi di <strong>installazione e manutenzione impianti idraulici</strong> per il settore industriale e civile.</p> <ul class="checklist"> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Riparazione perdite e <strong>sostituzione tubazioni</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Interventi rapidi e soluzioni durature</li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Conformità alle <strong>normative vigenti</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Assistenza per ogni esigenza impiantistica</li> </ul> </div> <div class="section-block"> <h3><span class="emoji">💧</span> Impianti Idrico-Sanitari</h3> <p>Progettiamo e realizziamo <strong>impianti idrico-sanitari</strong> per una gestione ottimale delle risorse idriche.</p> <ul class="checklist"> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Installazione di <strong>sanitari e rubinetteria</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Sistemi di distribuzione <strong>acqua calda e fredda</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Soluzioni per il <strong>risparmio idrico</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Riduzione dei consumi e degli sprechi</li> </ul> </div> <div class="section-block"> <h3><span class="emoji">🔥</span> Impianti di Riscaldamento</h3> <p>Progettazione e installazione di <strong>impianti di riscaldamento</strong> ad alta efficienza per il <strong>risparmio energetico</strong>.</p> <ul class="checklist"> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Caldaie a condensazione</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Riscaldamento a pavimento</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Pompe di calore</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Sistemi radianti</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Riduzione delle emissioni</li> </ul> </div> <div class="section-block"> <h3><span class="emoji">❄️</span> Condizionamento e Climatizzazione</h3> <p><strong>Impianti di condizionamento</strong> per ambienti residenziali e commerciali con soluzioni personalizzate.</p> <ul class="checklist"> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Climatizzatori a parete</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Sistemi canalizzati</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Split e multi-split</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Temperatura ideale tutto l'anno</li> </ul> </div> <div class="section-block"> <h3><span class="emoji">🌬️</span> Trattamento Aria (VMC)</h3> <p><strong>Ventilazione meccanica controllata</strong> per migliorare la <strong>qualità dell'aria interna</strong>.</p> <ul class="checklist"> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Filtrazione</strong> dell'aria</li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Deumidificazione</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Ricambio d'aria costante</li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Salute e benessere negli ambienti</li> </ul> </div> <div class="section-block"> <h3><span class="emoji">☀️</span> Impianti Solari Termici</h3> <p><strong>Energia solare</strong> come fonte rinnovabile per riscaldamento e acqua calda.</p> <ul class="checklist"> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Produzione di <strong>acqua calda sanitaria</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Supporto al riscaldamento</li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Sostenibilità ambientale</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Riduzione dei <strong>costi in bolletta</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Accesso a <strong>incentivi fiscali</strong></li> </ul> </div> <div class="section-block highlight"> <h3><span class="emoji">⭐</span> Perché scegliere GaMa Service?</h3> <p>Con esperienza nel <strong>settore termoidraulico</strong>, ci distinguiamo per professionalità, puntualità e <strong>assistenza post-vendita</strong>.</p> <ul class="checklist"> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Preventivi gratuiti</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span><strong>Manutenzione ordinaria e straordinaria</strong></li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Servizio clienti sempre disponibile</li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Migliori marche del settore</li> <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>Qualità, durabilità e <strong>certificazione degli impianti</strong></li> </ul> </div> </div> <div class="cta-bar" id="contatti"> <p>Hai bisogno di un preventivo?<span>Contattaci per una consulenza gratuita e senza impegno.</span></p> <a href="tel:+390396776853" class="cta-btn"> <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Contattaci </a> </div> </div> </section> </main> 
 <footer>

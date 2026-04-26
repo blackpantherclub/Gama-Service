@@ -268,29 +268,55 @@ footer p {
 }
 
 
-/* MOBILE CALL ICON */
-.mobile-call{
-  display:none;
-  width:48px;
-  height:48px;
-  border-radius:14px;
-  align-items:center;
-  justify-content:center;
-  background:rgba(245,144,20,.15);
-  border:1px solid rgba(245,144,20,.3);
-  font-size:22px;
-  color:#f59014;
-  text-decoration:none;
-  transition:.25s;
+
+/* FIX MOBILE CALL ICON VISIBILE */
+.mobile-call {
+  display: none !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 16px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  justify-self: end !important;
+  background: rgba(245,144,20,.15) !important;
+  border: 1px solid rgba(245,144,20,.35) !important;
+  color: #f59014 !important;
+  text-decoration: none !important;
+  position: relative !important;
+  z-index: 9999 !important;
+  box-shadow: 0 0 18px rgba(245,144,20,.16) !important;
 }
-.mobile-call:hover{
-  background:rgba(245,144,20,.25);
-  transform:scale(1.08);
-  box-shadow:0 0 20px rgba(245,144,20,.4);
+
+.mobile-call svg {
+  width: 22px !important;
+  height: 22px !important;
+  stroke: currentColor !important;
+  stroke-width: 2.2 !important;
+  fill: none !important;
 }
-@media(max-width:780px){
-  .mobile-call{display:flex;}
-  .btn-primary{display:none!important;}
+
+.mobile-call:active {
+  transform: scale(.96) !important;
+}
+
+@media (max-width: 780px) {
+  .mobile-call {
+    display: inline-flex !important;
+  }
+
+  .nav {
+    grid-template-columns: 62px 1fr 62px !important;
+  }
+
+  .nav .btn-primary {
+    display: none !important;
+  }
+}
+
+@media (min-width: 781px) {
+  .mobile-call {
+    display: none !important;
+  }
 }
 
 </style>
@@ -330,7 +356,13 @@ footer p {
 <body> <div class="topbar"> <div class="container"> <span>Operativi · Sovico (MB) · Lombardia</span> <span>P.IVA 12048300961 · <span id="datetime" class="live-datetime">--</span></span> </div> </div> <header> <div class="container nav">
 <button class="gama-menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="gamaMegaMenu"><span class="gama-menu-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="gama-menu-label">MENU</span></button>
 <a href="index.html" class="brand" aria-label="GaMa Service home"> <img src="assets/img-02-1f57fc19aa46.gif" alt="GaMa Service logo" class="brand-logo"> <span>GaMa Service</span> </a>
-<a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a> </div> </header> <div class="gama-mega" id="gamaMegaMenu" aria-hidden="true"> <div class="gama-mega-layout"> <aside class="gama-mega-left"> <a class="active" href="index.html">Home</a> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Servizi</a> <a href="soluzioni.html">Soluzioni</a> <a href="contatti.html">Contatti</a> </aside> <div class="gama-mega-main"> <div class="gama-mega-cols"> <div class="gama-mega-col"> <h4>Impianti tecnici</h4> <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a> <a href="impianti-elettrici.html">Impianti elettrici</a> <a href="impianti-speciali.html">Impianti speciali</a> </div> <div class="gama-mega-col"> <h4>Edilizia</h4> <a href="edilizia.html">Edilizia</a> <div class="gama-mega-rule"></div> <h4>Facility Management</h4> <a href="facility-management.html">Facility Management</a> </div> <div class="gama-mega-col"> <h4>Sistemi speciali</h4> <a href="impianti-speciali.html">Infrastrutture di rete</a> <div class="gama-mega-rule"></div> <h4>Azienda e supporto</h4> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Tutti i servizi</a> <a href="tel:+390396776853">Chiama GaMa Service</a> <a href="mailto:info@gama-service.com">Scrivici una email</a> </div> </div>
+<a class="btn btn-primary" href="tel:+390396776853">Chiamaci</a> 
+<a href="tel:+390396776853" class="mobile-call" aria-label="Chiama GaMa Service">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.77.66 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.84.32 1.71.54 2.61.66A2 2 0 0 1 22 16.92z"/>
+  </svg>
+</a>
+</div> </header> <div class="gama-mega" id="gamaMegaMenu" aria-hidden="true"> <div class="gama-mega-layout"> <aside class="gama-mega-left"> <a class="active" href="index.html">Home</a> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Servizi</a> <a href="soluzioni.html">Soluzioni</a> <a href="contatti.html">Contatti</a> </aside> <div class="gama-mega-main"> <div class="gama-mega-cols"> <div class="gama-mega-col"> <h4>Impianti tecnici</h4> <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a> <a href="impianti-elettrici.html">Impianti elettrici</a> <a href="impianti-speciali.html">Impianti speciali</a> </div> <div class="gama-mega-col"> <h4>Edilizia</h4> <a href="edilizia.html">Edilizia</a> <div class="gama-mega-rule"></div> <h4>Facility Management</h4> <a href="facility-management.html">Facility Management</a> </div> <div class="gama-mega-col"> <h4>Sistemi speciali</h4> <a href="impianti-speciali.html">Infrastrutture di rete</a> <div class="gama-mega-rule"></div> <h4>Azienda e supporto</h4> <a href="chi-siamo.html">Chi siamo</a> <a href="servizi.html">Tutti i servizi</a> <a href="tel:+390396776853">Chiama GaMa Service</a> <a href="mailto:info@gama-service.com">Scrivici una email</a> </div> </div>
 </div> </div>
 </div> <div class="mega-overlay" id="megaMenu" aria-hidden="true"> <div class="mega-shell"> <aside class="mega-left"> <a class="active" href="servizi.html">Servizi</a> <a href="chi-siamo.html">Chi siamo</a> <a href="soluzioni.html">Soluzioni</a> <a href="contatti.html">Contatti</a> </aside> <div class="mega-main"> <div class="mega-main-grid"> <div class="mega-col"> <h4>Impianti tecnici</h4> <a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici e termotecnici</a> <a href="impianti-elettrici.html">Impianti elettrici</a> <a href="impianti-speciali.html">Impianti speciali</a> <div class="mega-rule"></div> <h4>Manutenzione</h4> <a href="manutenzione.html">Interventi ordinari</a> <a href="manutenzione.html">Interventi straordinari</a> </div> <div class="mega-col"> <h4>Edilizia</h4> <a href="edilizia.html">Ristrutturazioni</a> <a href="edilizia.html">Nuove costruzioni</a> <a href="edilizia.html">Manutenzioni edili</a> <div class="mega-rule"></div> <h4>Facility Management</h4> <a href="facility-management.html">Arredamento</a> <a href="facility-management.html">Facchinaggio</a> <a href="facility-management.html">Giardinaggio</a> <a href="facility-management.html">Pulizie</a> </div> <div class="mega-col"> <h4>Sistemi speciali</h4> <a href="impianti-speciali.html">Reti dati</a> <a href="impianti-speciali.html">Data center</a> <a href="impianti-speciali.html">Videosorveglianza</a> <a href="impianti-speciali.html">Controllo accessi</a> <a href="impianti-speciali.html">Building automation</a> <div class="mega-rule"></div> <h4>Supporto</h4> <a href="tel:+390396776853">Chiama GaMa Service</a> <a href="mailto:info@gama-service.com">Scrivici una email</a> </div> </div> <aside class="mega-feature"> <img src="assets/img-08-b7b47efa6681.webp" alt="GaMa Service servizi integrati"> <h3>Un unico partner operativo per impianti, edilizia e facility.</h3> <a class="mega-feature-btn" href="servizi.html">Vai ai servizi</a> </aside> </div> </div> </div> <main id="home"> <section class="hero"> <div class="container hero-grid"> <div> <div class="eyebrow">50+ anni di esperienza</div> <h1>Concretizziamo progetti, creiamo futuro</h1> <p>Soluzioni su misura per la realizzazione e la manutenzione di impianti meccanici, termotecnici, elettrici e opere edili. Un unico partner per progettazione, realizzazione e gestione.</p> <div class="hero-actions"> <a class="btn btn-primary" href="contatti.html">Ricevi un preventivo</a> <a class="btn btn-secondary" href="#servizi">Esplora i servizi</a> </div> </div> <aside class="hero-panel" aria-label="Video tecnologico GaMa Service">
 <div class="tech-video" aria-hidden="true"> <span class="scan"></span> <span class="connection c1"></span> <span class="connection c2"></span> <span class="connection c3"></span> <span class="connection c4"></span> <span class="connection c5"></span> <div class="city"> <span class="building b1"></span> <span class="building b2"></span> <span class="building b3"></span> <span class="building b4"></span> <span class="building b5"></span> </div> <div class="service-node node-hvac"> <svg viewBox="0 0 24 24"><path d="M12 3v18M5 6l14 12M19 6L5 18"/><circle cx="12" cy="12" r="3"/></svg> <span>Termo<br>tecnici</span> </div> <div class="service-node node-electric"> <svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 10-13h-7l1-7z"/></svg> <span>Elettrici</span> </div> <div class="service-node node-special"> <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M7 9h2M11 9h2M15 9h2"/></svg> <span>Impianti<br>speciali</span> </div> <div class="service-node node-edile"> <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-7h6v7"/></svg> <span>Edilizia</span> </div> <div class="service-node node-facility"> <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-5"/></svg> <span>Facility<br>management</span> </div>
