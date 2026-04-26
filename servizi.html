@@ -2082,6 +2082,144 @@ body.gama-menu-open .gama-menu-lines span:nth-child(3) {
   .gama-menu-label { font-size: 10px !important; }
 }
 
+
+/* FIX X CHIUSURA VISIBILE + ARANCIO/ROSSA */
+.gama-menu-toggle {
+  overflow: visible !important;
+}
+
+.gama-menu-lines {
+  overflow: visible !important;
+}
+
+.gama-menu-lines span {
+  background: #ffffff !important;
+}
+
+body.gama-menu-open .gama-menu-toggle {
+  transform: translateY(6px) !important;
+}
+
+body.gama-menu-open .gama-menu-lines span:nth-child(1),
+body.gama-menu-open .gama-menu-lines span:nth-child(3) {
+  background: #f59014 !important;
+  box-shadow: 0 0 14px rgba(245,144,20,.45);
+}
+
+body.gama-menu-open .gama-menu-toggle:hover .gama-menu-lines span:nth-child(1),
+body.gama-menu-open .gama-menu-toggle:hover .gama-menu-lines span:nth-child(3) {
+  background: #ff3b3b !important;
+  box-shadow: 0 0 18px rgba(255,59,59,.50);
+}
+
+body.gama-menu-open .gama-menu-label {
+  color: #f59014 !important;
+}
+
+body.gama-menu-open .gama-menu-toggle:hover .gama-menu-label {
+  color: #ff3b3b !important;
+}
+
+.gama-mega {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+
+
+/* FIX PIXEL PERFECT X: dentro hamburger, mai tagliata */
+.gama-menu-toggle {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  z-index: 9999 !important;
+  overflow: visible !important;
+  width: 64px !important;
+  height: 58px !important;
+}
+
+.gama-menu-lines {
+  overflow: visible !important;
+  width: 34px !important;
+  height: 24px !important;
+}
+
+.gama-menu-lines span {
+  width: 34px !important;
+  height: 3px !important;
+  border-radius: 999px !important;
+  transform-origin: center center !important;
+}
+
+body.gama-menu-open .gama-menu-toggle {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+body.gama-menu-open .gama-menu-lines span:nth-child(1) {
+  top: 10px !important;
+  transform: rotate(45deg) !important;
+  background: #f59014 !important;
+  box-shadow: 0 0 14px rgba(245,144,20,.45) !important;
+}
+
+body.gama-menu-open .gama-menu-lines span:nth-child(2) {
+  opacity: 0 !important;
+  transform: scaleX(.25) !important;
+}
+
+body.gama-menu-open .gama-menu-lines span:nth-child(3) {
+  top: 10px !important;
+  transform: rotate(-45deg) !important;
+  background: #f59014 !important;
+  box-shadow: 0 0 14px rgba(245,144,20,.45) !important;
+}
+
+body.gama-menu-open .gama-menu-label {
+  color: #f59014 !important;
+}
+
+body.gama-menu-open .gama-menu-toggle:hover .gama-menu-lines span:nth-child(1),
+body.gama-menu-open .gama-menu-toggle:hover .gama-menu-lines span:nth-child(3) {
+  background: #ff3b3b !important;
+  box-shadow: 0 0 18px rgba(255,59,59,.55) !important;
+}
+
+body.gama-menu-open .gama-menu-toggle:hover .gama-menu-label {
+  color: #ff3b3b !important;
+}
+
+.gama-mega,
+.gama-mega-layout,
+.gama-mega-left,
+.gama-mega-main {
+  overflow: visible !important;
+}
+
+@media (max-width: 780px) {
+  .gama-menu-toggle {
+    width: 58px !important;
+    height: 58px !important;
+  }
+
+  .gama-menu-lines {
+    width: 32px !important;
+    height: 23px !important;
+  }
+
+  .gama-menu-lines span {
+    width: 32px !important;
+  }
+
+  body.gama-menu-open .gama-menu-lines span:nth-child(1),
+  body.gama-menu-open .gama-menu-lines span:nth-child(3) {
+    top: 10px !important;
+  }
+}
+
 </style>
 </head>
 
@@ -2309,6 +2447,7 @@ body.gama-menu-open .gama-menu-lines span:nth-child(3) {
 
 
 
+
 <script>
 (function () {
   const toggles = document.querySelectorAll('.gama-menu-toggle');
@@ -2321,25 +2460,18 @@ body.gama-menu-open .gama-menu-lines span:nth-child(3) {
       if (label) label.textContent = open ? 'CHIUDI' : 'MENU';
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    if (panel) panel.setAttribute('aria-hidden', document.body.classList.contains('gama-menu-open') ? 'false' : 'true');
+    if (panel) panel.setAttribute('aria-hidden', open ? 'false' : 'true');
   }
 
   updateLabels();
-
   toggles.forEach(function (toggle) {
-    toggle.addEventListener('click', function () {
-      setTimeout(updateLabels, 0);
-    });
+    toggle.addEventListener('click', function () { setTimeout(updateLabels, 0); });
   });
-
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') setTimeout(updateLabels, 0);
   });
-
   document.querySelectorAll('.gama-mega a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      setTimeout(updateLabels, 0);
-    });
+    link.addEventListener('click', function () { setTimeout(updateLabels, 0); });
   });
 })();
 </script>

@@ -1,0 +1,62 @@
+{
+  "chi-siamo.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "contatti.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "edilizia.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "facility-management.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "impianti-elettrici.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "impianti-speciali.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "index.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "manutenzione.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  },
+  "servizi.html": {
+    "hamburger": 1,
+    "label": 1,
+    "mega": 1,
+    "contatti_ok": true
+  }
+}
