@@ -1,0 +1,69 @@
+{
+  "chi-siamo.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "contatti.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "edilizia.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "facility-management.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "impianti-elettrici.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "impianti-meccanici-e-termotecnici.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "impianti-speciali.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "index.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "manutenzione.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "servizi.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "sitemap.html": {
+    "visible_sitemap_anchor_count": 1,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "soluzioni.html": {
+    "visible_sitemap_anchor_count": 0,
+    "seo_meta_description": true,
+    "canonical": true
+  },
+  "sitemap.xml": {
+    "exists": true
+  },
+  "robots.txt": {
+    "exists": true,
+    "contains_sitemap": true
+  }
+}

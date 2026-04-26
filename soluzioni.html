@@ -227,6 +227,23 @@ body.gama-menu-open .gama-menu-toggle:hover .gama-menu-lines span:nth-child(3) {
   }
 }
 
+
+/* FIX FOOTER LINK CLICCABILI */
+footer a,
+.footer a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  transition: color .2s ease, transform .2s ease, text-shadow .2s ease;
+}
+
+footer a:hover,
+.footer a:hover {
+  color: #ff3b3b !important;
+  transform: translateX(4px);
+  text-shadow: 0 0 14px rgba(255,59,59,.25);
+}
+
 </style>
 
 <style>
@@ -831,7 +848,7 @@ body.gama-menu-open .gama-menu-toggle:hover .gama-menu-lines span:nth-child(3) {
     </div>
   </section>
 </main>
-<footer> <div class="container footer-grid"> <div> <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p> <p style="margin-top:14px">P.IVA 12048300961</p> </div> <div> <h4>Servizi</h4> <ul> <li><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a></li> <li><a href="impianti-elettrici.html">Impianti elettrici</a></li> <li><a href="impianti-speciali.html">Impianti speciali</a></li> <li><a href="edilizia.html">Edilizia</a></li> <li><a href="manutenzione.html">Manutenzione</a></li> </ul> </div> <div> <h4>Azienda</h4> <ul> <li><a href="chi-siamo.html">Chi siamo</a></li> <li><a href="servizi.html">Servizi</a></li> <li><a href="soluzioni.html">Soluzioni</a></li> <li><a href="contatti.html">Contatti</a></li> </ul> </div> <div> <h4>Contatti</h4> <ul> <li><a href="tel:+390396776853">+39 039 677 6853</a></li> <li><a href="mailto:info@gama-service.com">info@gama-service.com</a></li> <li>Lun - Ven · 08:30 - 18:30</li> </ul> </div> </div> <div class="container footer-bottom"> <span>© GaMa Service. Tutti i diritti riservati.</span> </div> <a href="sitemap.html">Sitemap</a>
+<footer> <div class="container footer-grid"> <div> <p>Viale Monza, 69<br>Sovico, 20845 MB<br>Lombardia, Italia</p> <p style="margin-top:14px">P.IVA 12048300961</p> </div> <div> <h4>Servizi</h4> <ul> <li><a href="impianti-meccanici-e-termotecnici.html">Impianti meccanici</a></li> <li><a href="impianti-elettrici.html">Impianti elettrici</a></li> <li><a href="impianti-speciali.html">Impianti speciali</a></li> <li><a href="edilizia.html">Edilizia</a></li> <li><a href="manutenzione.html">Manutenzione</a></li> </ul> </div> <div> <h4>Azienda</h4> <ul> <li><a href="chi-siamo.html">Chi siamo</a></li> <li><a href="servizi.html">Servizi</a></li> <li><a href="soluzioni.html">Soluzioni</a></li> <li><a href="contatti.html">Contatti</a></li> </ul> </div> <div> <h4>Contatti</h4> <ul> <li><a href="tel:+390396776853">+39 039 677 6853</a></li> <li><a href="mailto:info@gama-service.com">info@gama-service.com</a></li> <li>Lun - Ven · 08:30 - 18:30</li> </ul> </div> </div> <div class="container footer-bottom"> <span>© GaMa Service. Tutti i diritti riservati.</span> </div>
 </footer>
 <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "CollectionPage", "name": "Servizi — GaMa Service", "url": "https://www.gama-service.com/servizi.html", "description": "Panoramica dei servizi GaMa Service.", "inLanguage": "it-IT" } </script>
 <script> function updateDateTime() { const now = new Date(); const date = now.toLocaleDateString('it-IT', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' }); const time = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); const datetime = document.getElementById('datetime'); if (!datetime) return; datetime.textContent = date + ' · ' + time; } updateDateTime(); setInterval(updateDateTime, 1000); </script>
